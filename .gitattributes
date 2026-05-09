@@ -1,0 +1,14 @@
+# Default: treat as text, normalize to LF in the repo, restore platform-native on checkout.
+* text=auto eol=lf
+
+# PowerShell scripts must keep CRLF on Windows checkouts.
+*.ps1 text eol=crlf
+
+# Shell scripts must stay LF even on Windows.
+*.sh  text eol=lf
+
+# Documentation stays LF for clean diffs.
+*.md  text eol=lf
+
+# Python stays LF.
+*.py  text eol=lf

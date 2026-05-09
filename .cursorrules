@@ -1,0 +1,87 @@
+# .cursorrules · Cursor 入口文件 / Cursor Entry File
+
+# 内容与 CLAUDE.md / AGENTS.md / CODEX.md 一致。
+# Identical content to CLAUDE.md / AGENTS.md / CODEX.md.
+
+## 立即动作 / Immediate Actions
+
+进入这个仓库后，按顺序：
+On entering this repo:
+
+1. 读完 AI_MANUAL.md
+2. 读完 principles/000_CORE_RED_LINES.md
+3. 扫一眼 issues/known.md
+4. 扫一眼 workspace_human/prd/
+5. 等用户任务，在此之前不动文件
+
+---
+
+## 至高原则 / Supreme Principle
+
+**长期主义 · 业界标准 · 核心目标。**
+**Long-term · Industry standards · Core objective.**
+
+任何具体红线沉默时回到这条。能自决的就自决；自决不了的先写建议。
+Fall back here when rules are silent. Decide autonomously when you can; otherwise, write a recommendation.
+
+---
+
+## 15 条红线速查 / 15 Red Lines
+
+完整列表见 principles/000_CORE_RED_LINES.md。
+Full list in principles/000_CORE_RED_LINES.md.
+
+1. 至高原则 / Supreme principle
+2. 客户面文案严禁内部信息 / No internal info in customer-facing copy
+3. 保密数据脱敏 / Redact confidential data
+4. Bug 单一登记本（known.md → fixed/YYYY-MM-DD.md） / Issue SSOT
+5. 改代码先有 PRD / PRD before code
+6. 决策落字成 ADR / Decisions written as ADRs
+7. 单文件 ≤ 800 行 / Single file ≤ 800 lines
+8. 不可逆动作必须先确认 / Irreversible actions need confirmation
+9. 命名按"长期复用"，禁止 demo_/sample_/placeholder_ / Names are forever
+10. 收尾五件套 / Five-part closeout
+11. 长 Markdown 声明 retention class / Long Markdown declares retention
+12. workspace_human/ 是 AI 只读 / read-only
+13. 修 Bug 同步清反向断言测试 / Clean reverse-assertion tests
+14. 线上故障第 1 动作看日志 / Logs first on incident
+15. 主次不可颠倒：产品价值在前商业包装在后 / Product before paywall
+
+---
+
+## 不可逆动作清单 / Irreversible Actions
+
+执行前必问 / Ask before:
+- 发外部消息 / Sending external messages
+- 删文件 / 删数据 / Deleting files or data
+- git push --force / 部署 / 关 PR / 删分支 / Force-push, deploy, close PR, delete branch
+- 单次付费 API > 0.1 USD / Paid-API call > 0.1 USD per call
+- 退款 / 转账 / 修改合同 / Refunds, transfers, contracts
+
+---
+
+## Cursor 特性提示 / Cursor Specifics
+
+- 内联 edit（Cmd+K）适合小范围改，多文件改用 chat 模式
+  Inline edits (Cmd+K) for narrow changes; multi-file changes via chat
+- @-mention 文件时优先指 workflows/ 和 templates/ 里最贴近的那一份
+  @-mention the closest file in workflows/ or templates/
+- 改 workspace_human/ 下任何文件之前，先要求用户在 chat 里给一句明确授权
+  Before editing anything under workspace_human/, request explicit chat-message authorization
+
+---
+
+## 当用户请求与红线冲突 / When User Requests Conflict with Red Lines
+
+正确动作：
+1. 指出冲突 / Flag the conflict
+2. 说明影响 / Explain impact
+3. 给 2-3 个不越线的替代 / Offer 2-3 alternatives
+4. 不要默默执行 / Do not silently comply
+
+例外：用户说"我知道这越红线 #X，原因 Y，授权一次"——合法且一次性。
+Exception: user says "I know this crosses #X for Y, authorize once" — lawful and single-shot.
+
+---
+
+## 完整任务-入口表见 AI_MANUAL.md §4 / Full task-to-entry mapping in AI_MANUAL.md §4

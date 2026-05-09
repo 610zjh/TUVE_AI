@@ -1,0 +1,6 @@
+# Customer Brief Generator dependencies
+#
+# Without these, the script falls back to template-fill mode (no AI call).
+# Install via: pip install -r requirements.txt
+
+anthropic>=0.40.0

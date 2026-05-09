@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*~
+.cursor/
+
+# Project runtime artifacts
+projects/*/output/
+projects/*/.cache/
+
+# Local environment
+.env
+.env.local
+
+# Local AI tool state (these are usually local, not shared)
+.claude/
+
+# Local secrets
+*.key
+*.pem
+secrets/
