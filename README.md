@@ -8,6 +8,13 @@
 
 ---
 
+## 第一次打开这个仓库？/ First Time Here?
+
+如果这是你第一次打开 TUZHAN_AI，请先去 [`training/getting_started/`](training/getting_started/) —— 14 个角色 × "第一句脚本 + 本周三件事"，每份 5 分钟读完就能开工。
+If this is your first time, go to [`training/getting_started/`](training/getting_started/) — 14 roles × "first opening line + 3 things this week", 5 minutes each, ready to start work today.
+
+---
+
 ## 这个文件夹是给谁用的 / Who this is for
 
 | 角色 / Role | 你大概率会用到 / What you'll most likely use |

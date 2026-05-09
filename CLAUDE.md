@@ -82,7 +82,7 @@ When red lines are silent, fall back here. Decide autonomously when you can; oth
 | 周复盘 / Weekly review | [`workflows/planning/weekly_review_routine.md`](workflows/planning/weekly_review_routine.md) |
 | 上线自查 / Pre-deploy check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) |
-| 不知道从哪开始 / Don't know | [`workflows/ai_basics/`](workflows/ai_basics/) |
+| 不知道从哪开始 / Don't know | [`training/getting_started/`](training/getting_started/)（14 角色开局引导）/ [`workflows/ai_basics/`](workflows/ai_basics/)（基础课） |
 
 完整任务-入口表见 [`AI_MANUAL.md`](AI_MANUAL.md) §4。
 Full task-to-entry table: [`AI_MANUAL.md`](AI_MANUAL.md) §4.

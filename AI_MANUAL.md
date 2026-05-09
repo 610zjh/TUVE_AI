@@ -123,7 +123,7 @@ Do not modify any file before step 5 unless the user explicitly asked.
 | 上线前自查 / Pre-deploy self-check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出了线上故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) → 红线 #14 |
 | 做市场/竞品/客户访谈分析 / Market / competitor / customer-interview analysis | [`workflows/research_and_analysis/`](workflows/research_and_analysis/) |
-| 不知道从哪开始 / Don't know where to start | [`workflows/ai_basics/`](workflows/ai_basics/) — 全员通用基础 / universal basics |
+| 不知道从哪开始 / Don't know where to start | [`training/getting_started/`](training/getting_started/) — 14 角色开局引导 / 14-role onboarding（5 分钟读一份就能开工） |
 
 ---
 

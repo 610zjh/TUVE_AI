@@ -91,4 +91,11 @@ Exception: user says "I know this crosses #X for Y, authorize once" — lawful, 
 
 ---
 
+## 新人开局 / First-Time Onboarding
+
+第一次打开本仓库 → [`training/getting_started/`](training/getting_started/)（14 角色，每份 5 分钟读完就能开工）。
+First time here → [`training/getting_started/`](training/getting_started/) (14 roles, 5 min each).
+
+---
+
 ## 完整任务-入口表见 [`AI_MANUAL.md`](AI_MANUAL.md) §4 / Full task-to-entry table in [`AI_MANUAL.md`](AI_MANUAL.md) §4
