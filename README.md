@@ -156,6 +156,16 @@ The red lines, workflows, and templates are company-neutral — usable as-is.
 
 ---
 
+## 版本与变更 / Versions and Changes
+
+每次发版的内容、验证结果、刻意延后项见 [CHANGELOG.md](CHANGELOG.md)。
+Per-release contents, verification results, and deferred items: [CHANGELOG.md](CHANGELOG.md).
+
+当前版本：**v1.0**（2026-05-10，首次公开发布）。
+Current version: **v1.0** (2026-05-10, first public release).
+
+---
+
 ## License
 
 本仓库内容采用 CC BY 4.0 协议（见 [LICENSE](LICENSE)）。意味着你可以自由复用、修改、商用，只需要标注来源（"基于 TUZHAN_AI 工作方法手册"）。
