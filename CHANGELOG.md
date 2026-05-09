@@ -8,6 +8,39 @@ Root PRD: [`workspace_human/prd/PRD-0001_conference_playbook_for_using_ai_at_wor
 
 ---
 
+## v2026.05.10c — 2026-05-10
+
+对 [`products/`](products/) 内容做日常维护性修订，使描述更聚焦产品本身、更紧贴平台实时信息。
+Routine maintenance pass on [`products/`](products/) — sharpening focus on the product itself, aligning closer to live platform info.
+
+### What changes
+
+- `products/see2ai/pricing_and_account.md` —— 重写为按需计费机制说明，所有具体金额、换算关系、可选金额范围以平台 `/tenant/recharge` 与 `/actions` 详情页的实时展示为准
+- `products/see2ai/{README,getting_started,support,capabilities}.md` —— 同步价格相关描述与平台页面对齐；frontmatter 描述与正文措辞精简
+- `products/tuve/capabilities.md` —— 精简能力章节，聚焦 TUVE 对话式创作主线；章节序号重排
+- `products/tuve/{README,app_overview,getting_started,support}.md` —— 同步章节调整与文件互链更新
+
+---
+
+## v2026.05.10b — 2026-05-10
+
+新增 [`products/`](products/) 目录，收录兔展旗下 **SEE2AI** 平台与 **TUVE** 应用的公开产品介绍材料。
+
+### What ships
+
+- **`products/README.md`** — 目录入口，列出收录的产品和按场景的阅读路径
+- **`products/see2ai/`** —— SEE2AI 平台介绍材料 6 份：
+  - `README.md`（一页速览）/ `platform_overview.md`（平台定位与核心价值）/ `getting_started.md`（首次调用 SOP）/ `capabilities.md`（平台能力目录）/ `pricing_and_account.md`（按需计费机制 + 平台词元 + 失败不扣费）/ `support.md`（401/429/5xx 排查 + 工单 + API Key 安全提示）
+- **`products/tuve/`** —— TUVE 应用介绍材料 5 份：
+  - `README.md`（一页速览）/ `app_overview.md`（应用定位 + 4 类典型场景）/ `getting_started.md`（首支视频上手 + 高质量 Prompt 写法）/ `capabilities.md`（Agent 运行时/创作上下文/媒体引用/任务面板/典型场景）/ `support.md`（连接断开/生成失败/工单）
+- **入口文件同步更新**：
+  - `README.md` —— "Who this is for" 表加销售/客户成功/合作伙伴/视频四类入口；目录地图加 `products/`；"For Teams Adopting This Repo" 加 products/ 替换说明
+  - `AI_MANUAL.md` §2 仓库地图加 `products/`；§4 任务-入口表加 5 行（介绍 SEE2AI / 介绍 TUVE / 协助接入 / 解释计费 / 客户报错）
+  - `CLAUDE.md` 任务接入路径表加介绍 SEE2AI/TUVE 一行
+  - `AGENTS.md` / `CODEX.md` / `.cursorrules` 各加一段"SEE2AI / TUVE 产品介绍材料"指针
+
+---
+
 ## v2026.05.10 — 2026-05-10 (PRD-0002)
 
 按 [PRD-0002](workspace_human/prd/PRD-0002_role_based_getting_started.md) 加按角色分组的新人开局引导 `training/getting_started/`。

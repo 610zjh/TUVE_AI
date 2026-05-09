@@ -19,10 +19,12 @@ If this is your first time, go to [`training/getting_started/`](training/getting
 
 | 角色 / Role | 你大概率会用到 / What you'll most likely use |
 |---|---|
-| 销售 Sales | [`workflows/customer_communication/`](workflows/customer_communication/) · [`workflows/research_and_analysis/`](workflows/research_and_analysis/) · [`templates/customer_brief/`](templates/customer_brief/) · [`templates/sales_call_summary/`](templates/sales_call_summary/) |
+| 销售 Sales | [`products/`](products/)（SEE2AI / TUVE 产品介绍 / product introductions）· [`workflows/customer_communication/`](workflows/customer_communication/) · [`workflows/research_and_analysis/`](workflows/research_and_analysis/) · [`templates/customer_brief/`](templates/customer_brief/) · [`templates/sales_call_summary/`](templates/sales_call_summary/) |
+| 客户成功 / 客服 Customer Success / Support | [`products/`](products/)（产品介绍 + 接入 + 计费 + 故障排查 / product intro + onboarding + billing + troubleshooting）· [`workflows/customer_communication/`](workflows/customer_communication/) |
 | 运营 Operations | [`workflows/operations/`](workflows/operations/) · [`workflows/planning/`](workflows/planning/) · [`runbooks/`](runbooks/) · [`templates/weekly_review/`](templates/weekly_review/) |
-| 短视频制作 Video Production | [`workflows/content_creation/`](workflows/content_creation/) · [`templates/video_script/`](templates/video_script/) |
-| 产品 Product | [`workflows/planning/`](workflows/planning/) · [`workflows/decision_records/`](workflows/decision_records/) · [`templates/prd/`](templates/prd/) · [`workspace_human/prd/`](workspace_human/prd/) |
+| 短视频制作 Video Production | [`workflows/content_creation/`](workflows/content_creation/) · [`templates/video_script/`](templates/video_script/) · [`products/tuve/`](products/tuve/)（用 TUVE 加速生产 / production acceleration with TUVE） |
+| 产品 Product | [`workflows/planning/`](workflows/planning/) · [`workflows/decision_records/`](workflows/decision_records/) · [`templates/prd/`](templates/prd/) · [`workspace_human/prd/`](workspace_human/prd/) · [`products/`](products/)（产品介绍 / product introductions）|
+| 合作伙伴 / 集成方 Partners / Integrators | [`products/see2ai/`](products/see2ai/)（接入指南 + 能力清单）· [`products/tuve/`](products/tuve/)（应用介绍）|
 | 开发 Engineering | [`workflows/engineering/`](workflows/engineering/) · [`projects/`](projects/) · [`issues/`](issues/) · [`runbooks/`](runbooks/) · [`principles/`](principles/) |
 | 跨职能协作 Cross-functional | 必读 [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LINES.md) · [`workflows/ai_basics/`](workflows/ai_basics/) · [`case_studies/`](case_studies/) |
 
@@ -70,6 +72,7 @@ Don't let AI improvise from scratch. Pick the template closest to today's work f
 - 把今天的客户电话整理成跟进材料 → 用 [`templates/sales_call_summary/`](templates/sales_call_summary/)
 - 给一支 30 秒短视频写脚本 → 用 [`templates/video_script/`](templates/video_script/)
 - 写一份产品需求文档 → 用 [`templates/prd/`](templates/prd/)
+- 给客户介绍 SEE2AI / TUVE → 参考 [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) 或 [`products/tuve/app_overview.md`](products/tuve/app_overview.md) / Introduce SEE2AI / TUVE to a customer → see `products/see2ai/platform_overview.md` or `products/tuve/app_overview.md`
 
 ---
 
@@ -87,6 +90,8 @@ TUZHAN_AI/
 │                                Reusable work templates (PRD, brief, script, etc.)
 ├── case_studies/             ← 跨职能真实工作案例（替换为你团队的真实案例）
 │                                Cross-functional worked examples (replace with your team's)
+├── products/                 ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
+│                                Public product introductions for TUZHAN's SEE2AI and TUVE
 ├── workspace_human/          ← 人写的 PRD / 会议纪要（AI 只读）
 │                                Human-authored PRDs and meeting notes (AI read-only)
 ├── issues/                   ← 全公司 Bug / 工艺问题登记本（SSOT）
@@ -153,6 +158,8 @@ If you're a partner outside TUZHAN adopting this folder for your own team's AI b
   Replace the three cross-functional case studies in [`case_studies/`](case_studies/) with your team's
 - [`projects/`](projects/) 里的样例项目可以直接删掉，换上你自己的项目
   Delete the sample project in [`projects/`](projects/) and put yours in
+- [`products/`](products/) 是 TUZHAN 旗下产品（SEE2AI / TUVE）的公开介绍——**整个目录可以替换成你自家产品的公开介绍**，目录结构（`README.md` + 每个产品一个子目录）可以照搬作为模板
+  [`products/`](products/) holds public introductions for TUZHAN's products (SEE2AI / TUVE) — **replace the whole directory with your own products' public introductions**; the structure (`README.md` + one subdir per product) is reusable as a template
 - [`workspace_human/prd/`](workspace_human/prd/) 留着空目录，从你下一个真实需求开始往里写
   Leave [`workspace_human/prd/`](workspace_human/prd/) empty; populate it with your next real requirement
 - 培训材料 [`training/`](training/) 可以保留作为新员工 onboarding 资料，也可以替换成你公司的培训内容

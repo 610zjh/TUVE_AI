@@ -80,6 +80,8 @@ TUZHAN_AI/
 │   └── decision_records/        ← ADR 怎么写
 ├── templates/                   ← 复制即用的模板（PRD / Bug / 简报 / 脚本 等）
 ├── case_studies/                ← 三个跨职能真实案例
+├── products/                    ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
+│                                  Public product introductions for TUZHAN's SEE2AI and TUVE
 ├── workspace_human/             ← 人写的 PRD 和会议纪要（AI 只读）
 ├── issues/                      ← 全公司 Bug/问题单一登记本
 ├── runbooks/                    ← 部署 / 客户接入 / 销售交接 等操作手册
@@ -123,6 +125,11 @@ Do not modify any file before step 5 unless the user explicitly asked.
 | 上线前自查 / Pre-deploy self-check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出了线上故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) → 红线 #14 |
 | 做市场/竞品/客户访谈分析 / Market / competitor / customer-interview analysis | [`workflows/research_and_analysis/`](workflows/research_and_analysis/) |
+| 给客户介绍 SEE2AI 平台 / Introduce SEE2AI to a customer | [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) |
+| 给客户介绍 TUVE 应用 / Introduce TUVE to a customer | [`products/tuve/app_overview.md`](products/tuve/app_overview.md) |
+| 协助客户首次接入 SEE2AI / Help customer onboard to SEE2AI | [`products/see2ai/getting_started.md`](products/see2ai/getting_started.md) — 5 分钟跑通首次调用 / first call in 5 min |
+| 客户问 SEE2AI 怎么收费 / Customer asks about SEE2AI pricing | [`products/see2ai/pricing_and_account.md`](products/see2ai/pricing_and_account.md) |
+| 客户遇到 SEE2AI / TUVE 报错 / Customer hits SEE2AI / TUVE errors | [`products/see2ai/support.md`](products/see2ai/support.md) · [`products/tuve/support.md`](products/tuve/support.md) |
 | 不知道从哪开始 / Don't know where to start | [`training/getting_started/`](training/getting_started/) — 14 角色开局引导 / 14-role onboarding（5 分钟读一份就能开工） |
 
 ---
