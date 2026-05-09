@@ -95,6 +95,13 @@ First time here → [`training/getting_started/`](training/getting_started/) (14
 
 ---
 
+## 日常工作传递区 / Daily Handoff Zone
+
+[`handoffs/`](handoffs/) 收"同事每日交过来 / 我每日交出去"的轻量临时文档。inbox 收上游、outbox 发下游。outbox 可由 AI 协助起草、AI 可写；inbox/_raw/ 是 .gitignore 暂存（红线 #3 双层保密）。流转规则见 [`workflows/operations/handing_off_work.md`](workflows/operations/handing_off_work.md)。
+[`handoffs/`](handoffs/) holds lightweight transient docs for daily handoffs. AI may draft and write into outbox; inbox/_raw/ is gitignored. Flow: [`workflows/operations/handing_off_work.md`](workflows/operations/handing_off_work.md).
+
+---
+
 ## SEE2AI / TUVE 产品介绍材料 / SEE2AI / TUVE Product Materials
 
 [`products/`](products/) 收录了兔展旗下 **SEE2AI** 平台与 **TUVE** 应用的公开产品介绍——功能、接入、能力、计费、支持。需要给客户/合作伙伴介绍这两款产品时从这里取材。

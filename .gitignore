@@ -37,3 +37,8 @@ projects/*/.cache/
 *.key
 *.pem
 secrets/
+
+# handoffs/inbox/_raw/ 是未脱敏暂存区，不入 git（红线 #3）
+handoffs/inbox/_raw/*
+!handoffs/inbox/_raw/.gitkeep
+!handoffs/inbox/_raw/README.md

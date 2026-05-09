@@ -8,6 +8,45 @@ Root PRD: [`workspace_human/prd/PRD-0001_conference_playbook_for_using_ai_at_wor
 
 ---
 
+## v2026.05.10d — 2026-05-10 (PRD-0003)
+
+按 [PRD-0003](workspace_human/prd/PRD-0003_daily_handoff_zone.md) 加日常工作传递区 [`handoffs/`](handoffs/)（inbox + outbox），承载"同事每日交过来 / 我每日交出去"的轻量临时文档。
+
+### What ships
+
+- **`handoffs/`** —— 仓库根新目录树 + 4 份 README：
+  - `handoffs/README.md`（总入口：是什么 / 不是什么 / 命名 / 30 天反熵）
+  - `handoffs/inbox/README.md`（接收流：双层保密 + 脱敏自查 5 条）
+  - `handoffs/inbox/_raw/README.md`（红色警示：未脱敏暂存，已 .gitignore）
+  - `handoffs/inbox/_raw/.gitkeep`（让目录在 git 里存在）
+  - `handoffs/outbox/README.md`（发送流：脱敏 + 通知下游）
+- **`workflows/operations/handing_off_work.md`** —— 流转工作流：3 个判定问、inbox 接收流、outbox 发送流、AI 起草 5 步、5 个常见误用、周复盘扫描
+- **`.gitignore`** —— 加 3 行：`handoffs/inbox/_raw/*` 走 .gitignore，保留 .gitkeep + README（红线 #3 双层保密落地）
+- **导航更新 8 处**：
+  - `AI_MANUAL.md` §2 仓库地图加 `handoffs/` 节点；§4 任务-入口表加 2 行（"给同事临时传 / 收到同事一份"）
+  - `README.md` §"角色 → 你大概率会用到"销售/客户成功/运营/视频四行加 `handoffs/` 链接；§仓库地图加节点
+  - `CLAUDE.md` 任务接入路径表加 1 行（"日常和同事传一份东西"）
+  - `AGENTS.md` / `.cursorrules` / `CODEX.md` 各加一段"日常工作传递区"指针
+  - `workspace_human/README.md` 末尾加反向引用（指向 `../handoffs/` + 解释为何不在 human 区）
+  - `workflows/planning/weekly_review_routine.md` 团队周复盘加"步 4.5: handoffs/ 30 天反熵扫"
+
+### Red-line audit
+
+- ✅ AC-1..AC-28 全部通过（详见 PRD-0003 §11 完成快照）
+- ✅ 红线 #3 落地：`_raw/` 双层 + `.gitignore` 验证通过（AC-7）
+- ✅ 红线 #7：所有新文件 ≤ 800 行（最长 workflow 130 行）
+- ✅ 红线 #9：命名永久化，无 demo_/tmp_/temp_ 前缀
+- ✅ 红线 #11：单文件 < 200 行无需声明 retention；workflow 文件已声明 `retention: permanent`
+- ✅ 红线 #12：`workspace_human/` 既有正文未改，仅末尾追加 1 段反向引用（按 PRD AC-21 列明的合法授权动作执行）
+- ✅ 4 入口文件保持各自结构差异下的内容一致性（CLAUDE 表行 / 其他 3 个加段）
+
+### Deferred
+
+- **pre-commit hook 拦截未脱敏内容**：本次不做，按 PRD §9 决策 9.3 等纪律观察期；触发条件是第 1 次发生未脱敏 commit → 升级为可选 PRD
+- **30 天反熵首次扫描**：上线 30 天后第一次周复盘验证，PRD §7 复评点之一
+
+---
+
 ## v2026.05.10c — 2026-05-10
 
 对 [`products/`](products/) 内容做日常维护性修订，使描述更聚焦产品本身、更紧贴平台实时信息。

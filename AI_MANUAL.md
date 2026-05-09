@@ -82,6 +82,8 @@ TUZHAN_AI/
 ├── case_studies/                ← 三个跨职能真实案例
 ├── products/                    ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
 │                                  Public product introductions for TUZHAN's SEE2AI and TUVE
+├── handoffs/                    ← 日常工作传递区（inbox / outbox，AI 可写）
+│                                  Daily handoff zone (inbox / outbox, AI-writable)
 ├── workspace_human/             ← 人写的 PRD 和会议纪要（AI 只读）
 ├── issues/                      ← 全公司 Bug/问题单一登记本
 ├── runbooks/                    ← 部署 / 客户接入 / 销售交接 等操作手册
@@ -121,6 +123,8 @@ Do not modify any file before step 5 unless the user explicitly asked.
 | 给客户出一份项目简报 / Draft a customer brief | [`workflows/customer_communication/customer_brief_generation.md`](workflows/customer_communication/customer_brief_generation.md) → [`templates/customer_brief/`](templates/customer_brief/) |
 | 给短视频写脚本 / Draft a short-video script | [`workflows/content_creation/video_script_drafting.md`](workflows/content_creation/video_script_drafting.md) → [`templates/video_script/`](templates/video_script/) |
 | 周复盘 / Weekly review | [`workflows/planning/weekly_review_routine.md`](workflows/planning/weekly_review_routine.md) → [`templates/weekly_review/`](templates/weekly_review/) |
+| 给同事临时传一份东西 / Daily handoff out to a colleague | [`workflows/operations/handing_off_work.md`](workflows/operations/handing_off_work.md) → [`handoffs/outbox/`](handoffs/outbox/) |
+| 收到同事临时传过来一份东西 / Daily handoff in from a colleague | [`workflows/operations/handing_off_work.md`](workflows/operations/handing_off_work.md) → [`handoffs/inbox/`](handoffs/inbox/) |
 | 写一条决策记录 ADR / Record an ADR | [`workflows/decision_records/how_to_write_an_adr.md`](workflows/decision_records/how_to_write_an_adr.md) → [`templates/decision_record/`](templates/decision_record/) |
 | 上线前自查 / Pre-deploy self-check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出了线上故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) → 红线 #14 |

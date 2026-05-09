@@ -80,3 +80,11 @@ workspace_human/
 - `meetings/` 暂时是空的，从你下次会议起开始往里写
 
 如果你想看真实样例长什么样，去 [`case_studies/`](../case_studies/) 看 3 份完整案例。
+
+---
+
+## 找"同事日常交接区"？/ Looking for the Daily Handoff Zone?
+
+→ [`../handoffs/`](../handoffs/)
+
+不在本目录的原因：outbox 一侧含 AI 协助产物，AI 必须可写，与本目录"AI 只读"语义（红线 #12）冲突。详见 [`prd/PRD-0003_daily_handoff_zone.md`](prd/PRD-0003_daily_handoff_zone.md) §1.4。

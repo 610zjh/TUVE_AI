@@ -19,10 +19,10 @@ If this is your first time, go to [`training/getting_started/`](training/getting
 
 | 角色 / Role | 你大概率会用到 / What you'll most likely use |
 |---|---|
-| 销售 Sales | [`products/`](products/)（SEE2AI / TUVE 产品介绍 / product introductions）· [`workflows/customer_communication/`](workflows/customer_communication/) · [`workflows/research_and_analysis/`](workflows/research_and_analysis/) · [`templates/customer_brief/`](templates/customer_brief/) · [`templates/sales_call_summary/`](templates/sales_call_summary/) |
-| 客户成功 / 客服 Customer Success / Support | [`products/`](products/)（产品介绍 + 接入 + 计费 + 故障排查 / product intro + onboarding + billing + troubleshooting）· [`workflows/customer_communication/`](workflows/customer_communication/) |
-| 运营 Operations | [`workflows/operations/`](workflows/operations/) · [`workflows/planning/`](workflows/planning/) · [`runbooks/`](runbooks/) · [`templates/weekly_review/`](templates/weekly_review/) |
-| 短视频制作 Video Production | [`workflows/content_creation/`](workflows/content_creation/) · [`templates/video_script/`](templates/video_script/) · [`products/tuve/`](products/tuve/)（用 TUVE 加速生产 / production acceleration with TUVE） |
+| 销售 Sales | [`products/`](products/)（SEE2AI / TUVE 产品介绍 / product introductions）· [`workflows/customer_communication/`](workflows/customer_communication/) · [`workflows/research_and_analysis/`](workflows/research_and_analysis/) · [`templates/customer_brief/`](templates/customer_brief/) · [`templates/sales_call_summary/`](templates/sales_call_summary/) · [`handoffs/`](handoffs/) |
+| 客户成功 / 客服 Customer Success / Support | [`products/`](products/)（产品介绍 + 接入 + 计费 + 故障排查 / product intro + onboarding + billing + troubleshooting）· [`workflows/customer_communication/`](workflows/customer_communication/) · [`handoffs/`](handoffs/) |
+| 运营 Operations | [`workflows/operations/`](workflows/operations/) · [`workflows/planning/`](workflows/planning/) · [`runbooks/`](runbooks/) · [`templates/weekly_review/`](templates/weekly_review/) · [`handoffs/`](handoffs/) |
+| 短视频制作 Video Production | [`workflows/content_creation/`](workflows/content_creation/) · [`templates/video_script/`](templates/video_script/) · [`products/tuve/`](products/tuve/)（用 TUVE 加速生产 / production acceleration with TUVE） · [`handoffs/`](handoffs/) |
 | 产品 Product | [`workflows/planning/`](workflows/planning/) · [`workflows/decision_records/`](workflows/decision_records/) · [`templates/prd/`](templates/prd/) · [`workspace_human/prd/`](workspace_human/prd/) · [`products/`](products/)（产品介绍 / product introductions）|
 | 合作伙伴 / 集成方 Partners / Integrators | [`products/see2ai/`](products/see2ai/)（接入指南 + 能力清单）· [`products/tuve/`](products/tuve/)（应用介绍）|
 | 开发 Engineering | [`workflows/engineering/`](workflows/engineering/) · [`projects/`](projects/) · [`issues/`](issues/) · [`runbooks/`](runbooks/) · [`principles/`](principles/) |
@@ -92,6 +92,8 @@ TUZHAN_AI/
 │                                Cross-functional worked examples (replace with your team's)
 ├── products/                 ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
 │                                Public product introductions for TUZHAN's SEE2AI and TUVE
+├── handoffs/                 ← 日常工作传递区（inbox / outbox，AI 可写）
+│                                Daily handoff zone (inbox / outbox, AI-writable)
 ├── workspace_human/          ← 人写的 PRD / 会议纪要（AI 只读）
 │                                Human-authored PRDs and meeting notes (AI read-only)
 ├── issues/                   ← 全公司 Bug / 工艺问题登记本（SSOT）

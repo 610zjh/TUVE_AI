@@ -80,6 +80,7 @@ When red lines are silent, fall back here. Decide autonomously when you can; oth
 | 写视频脚本 / Video script | [`workflows/content_creation/video_script_drafting.md`](workflows/content_creation/video_script_drafting.md) |
 | 写客户简报 / Customer brief | [`workflows/customer_communication/customer_brief_generation.md`](workflows/customer_communication/customer_brief_generation.md) |
 | 周复盘 / Weekly review | [`workflows/planning/weekly_review_routine.md`](workflows/planning/weekly_review_routine.md) |
+| 日常给同事传一份东西 / 收到同事一份 / Daily handoff with a colleague | [`workflows/operations/handing_off_work.md`](workflows/operations/handing_off_work.md) → [`handoffs/`](handoffs/) |
 | 上线自查 / Pre-deploy check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) |
 | 给客户介绍 SEE2AI / TUVE / Introduce SEE2AI / TUVE to a customer | [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) · [`products/tuve/app_overview.md`](products/tuve/app_overview.md) |

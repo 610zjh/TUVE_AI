@@ -133,6 +133,16 @@ Each owner lists their top-3 + needed cross-function help.
 需要配合的事**当场拍板谁配合**，不要"会后再对"。
 Cross-function dependencies decided **on the spot**, not "let's chat after".
 
+### 步 4.5：handoffs/ 30 天反熵扫（3 分钟）/ Step 4.5: handoffs/ 30-Day Sweep (3 min)
+
+扫一次 [`../../handoffs/inbox/`](../../handoffs/inbox/) 与 [`../../handoffs/outbox/`](../../handoffs/outbox/) 顶层文件 mtime ≥ 30 天的，逐个 4 选 1：留 / 挪（→ runbooks / templates / case_studies / workspace_human/meetings）/ 删（git rm）/ 归档（archive/，开 COMPACT 提案）。
+
+AI 不允许自动执行清理，只列候选。详见 [`../../handoffs/README.md`](../../handoffs/README.md)。
+
+Sweep top-level files in [`handoffs/inbox/`](../../handoffs/inbox/) and [`handoffs/outbox/`](../../handoffs/outbox/) with mtime ≥ 30 days, decide one of four: keep / relocate / delete / archive. AI may only list candidates, never execute cleanup.
+
+---
+
 ### 步 5：本周一句话（5 分钟）/ Step 5: One-Line Wrap (5 min)
 
 每位参会者用一句话说本周最大的体感。
