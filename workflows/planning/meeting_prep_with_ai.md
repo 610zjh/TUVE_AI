@@ -1,23 +1,65 @@
-# 用 AI 准备会议 / Meeting Prep with AI
+# 用 AI 做需求密听与会议准备 / Requirement Discovery & Meeting Prep with AI
 
-> 适用：所有要主持会议或被邀去重要会议的人。
-> For: anyone hosting or attending an important meeting.
+> 适用：需求还不够清楚、需要先密听 / 开会 / 挖掘上下文，再决定是否进入 PRD 或执行的人。
+> For: anyone whose requirement is still fuzzy and needs a meeting/discovery pass before a PRD or execution.
 
 ---
 
 ## 一句话 / One Line
 
-**会议的产出是"决议"，不是"过程"。** AI 帮你在会前把决议候选准备好，让会议从 60 分钟降到 30 分钟。
-**A meeting's output is "decisions", not "process".** AI prepares decision candidates before the meeting, cutting 60 min to 30.
+**meeting 的第一产出是"把需求挖清楚"，第二产出才是"决议"。** 如果目标、边界、成功标准还模糊，就先做需求收敛，不要急着写 PRD 或直接开干。
+**The first output of a meeting is requirement clarity; decisions come second.** If goals, boundaries, or success criteria are still fuzzy, do discovery first instead of rushing into a PRD or execution.
+
+---
+
+## 什么时候必须先开 meeting / When a Meeting Must Come First
+
+只要出现任意一项，就不要直接写 PRD：
+
+- 用户只给了一句方向，没有明确成功标准
+- 你已经能预见 3 个以上关键澄清问题
+- 任务涉及多角色、多系统或跨团队协作
+- 任务和 TUVE 的 Agent / skill / config 上下文有关，但上下文还没对齐
+- 你直觉上已经在"猜用户真正想要什么"
+
+这时正确顺序是：`meeting / 密听 -> 需求挖掘 -> PRD -> 执行`。
 
 ---
 
 ## 会前 15 分钟的标准动作 / Standard 15-Minute Pre-Meeting
 
+先分辨这次 meeting 属于哪一类：
+
+- **需求挖掘型**：目标是把问题、边界、约束、成功标准讲清楚
+- **方案决议型**：目标是在需求已经较清楚的前提下做取舍
+
+如果是需求挖掘型，先跑下面这一步；不要急着列解决方案。
+
+### 步 0：列出"还没搞清楚什么" / Step 0: List What Is Still Unclear
+
+```
+我要针对 [主题] 开一个 meeting。
+
+现在我手里只有这些输入：
+- 用户原话 / 背景：...
+- 已知上下文：...
+- 如果和 TUVE 运行时有关，补充 skill / config / Agent 上下文：...
+
+请先不要写方案，先帮我列出：
+- 已经明确的需求信号
+- 还没明确的关键问题（按 H1 / H2 / H3 编号）
+- 这次 meeting 最该问清楚的 top-5 问题
+- 如果这些问题不问清，后面最容易返工的地方
+```
+
 ### 步 1：明确这次会议的"决议候选" / Step 1: Frame Decision Candidates
 
-不是"我们开个会聊聊 X"，是"开会决定 A、B、C 三件事"。
-Not "let's chat about X", but "the meeting decides A, B, C".
+如果这次 meeting 的目标其实还是需求挖掘，就把这里的"决议候选"改成"待确认问题"。
+If the meeting is still for discovery, convert "decision candidates" into "questions to confirm".
+
+不是"我们开个会聊聊 X"，而是：
+- 需求挖掘型：`开会确认 A、B、C 三个关键问题`
+- 方案决议型：`开会决定 A、B、C 三件事`
 
 ```
 明天 10:00 我和 [谁] 开会，主题是 [X]。
@@ -39,11 +81,12 @@ Not "let's chat about X", but "the meeting decides A, B, C".
 ### 步 2：准备会议议程 / Step 2: Build the Agenda
 
 ```
-基于上面的决议候选，请帮我起草一份会议议程，60 分钟内：
-- 0-5 分钟：背景对齐（基于上次纪要）
-- 5-50 分钟：3-5 件决议（每件 10-15 分钟）
+基于上面的待确认问题 / 决议候选，请帮我起草一份会议议程，60 分钟内：
+- 0-5 分钟：背景对齐（基于上次纪要 / 原始需求）
+- 5-40 分钟：逐条挖清 top-3~5 个问题（每件 8-12 分钟）
+- 40-50 分钟：确认哪些内容已经足够进入 PRD，哪些还不能
 - 50-55 分钟：行动项确认（谁做什么 + 截止）
-- 55-60 分钟：下次会议时间
+- 55-60 分钟：是否需要下一次 meeting / 是否进入 PRD
 
 把议程发给我，我会调整后转发给参会者。
 ```
@@ -91,9 +134,11 @@ First 30 seconds → must state position ("I lean A, because ..."), then expand.
 
 请帮我整理成会议纪要，按 [`templates/meeting_notes/`](../../templates/meeting_notes/) 的模板。
 重点标出：
+- 已确认的需求信号（哪些已经可以写进 PRD）
 - 达成的决议（每条带"决议人 + 时间"）
+- 待确认问题（按 H1 / H2 / H3 编号，标记谁来补）
 - 行动项（每条带"谁做 + 什么 + 何时"）
-- 未决但悬挂的（标记下次需要决议）
+- 未决但悬挂的（标记下次需要决议 / 或继续挖掘）
 
 约束：
 - 不要捏造没说过的话
@@ -109,10 +154,25 @@ AI's minutes must be **human-reviewed**:
 - 行动项的"谁"是不是真同意了？（不是 AI 替别人答应的）/ "Who" actually agreed?
 - 截止时间是不是真的能赶上？/ Deadlines realistic?
 
-### 步 3：发送 / Step 3: Distribute
+### 步 3：判断是否进入 PRD / Step 3: Decide Whether to Enter PRD
+
+meeting 结束后先问 4 个问题：
+
+- [ ] 目标是否已经能写成可验证的成功标准？
+- [ ] 范围和非目标是否已经说清？
+- [ ] 关键依赖、角色和约束是否不再靠猜？
+- [ ] 仍未确认的问题是否已经少到不会让 PRD 失真？
+
+四项都过，才进入 PRD。
+否则，继续补信息或开下一轮 meeting。
+
+### 步 4：发送 / Step 4: Distribute
 
 24 小时内发到所有参会者。同步存到 [`workspace_human/meetings/YYYY-MM-DD_<topic>.md`](../../workspace_human/meetings/)。
 Within 24h to all attendees. Save to `workspace_human/meetings/YYYY-MM-DD_<topic>.md`.
+
+如果 meeting 已经把需求挖清，下一步才是去 [`writing_a_prd.md`](writing_a_prd.md)。
+If the meeting has clarified the requirement enough, only then move to [`writing_a_prd.md`](writing_a_prd.md).
 
 **纪要里的决议如果是非平凡决策**，同时起一份 ADR（[`workflows/decision_records/`](../decision_records/)）。
 If meeting decisions are non-trivial, **also** spawn an ADR.
@@ -136,6 +196,13 @@ Right pattern: you attend + brief notes, AI **expands** the notes.
 
 ✅ 用 AI 在会前把决议候选 + 优劣对比都准备好，让会议直接进入"投票"模式。
 Right: pre-prep candidates + tradeoffs; meeting jumps straight to "vote" mode.
+
+### 2.5 不要把 meeting 跳过直接写 PRD
+
+❌ 需求只有一句话，就直接让 AI 写 PRD。
+**问题**：AI 会自动补全大量假设，最后写出来的是"看起来完整"，不一定是"真的对"。
+
+✅ 先开 meeting，把目标、约束、边界、未决问题和成功标准挖出来，再写 PRD。
 
 ### 3. 不要在会议纪要里捏造"达成共识"
 
@@ -177,6 +244,7 @@ TUZHAN is multinational; some meetings span CN+EN.
 ## 速查清单 / Quick Checklist
 
 **会前 15 分钟**:
+- [ ] 已列出"已确认需求信号"和"H1/H2/H3 待确认问题"
 - [ ] 决议候选 3-5 件
 - [ ] 每件有 2-3 个候选选项 + 优劣
 - [ ] 议程时间盒
@@ -192,4 +260,5 @@ TUZHAN is multinational; some meetings span CN+EN.
 - [ ] 人审纪要
 - [ ] 发到所有参会者
 - [ ] 存到 `workspace_human/meetings/`
+- [ ] 判断是否已满足进入 PRD 的条件
 - [ ] 非平凡决策 → 起 ADR

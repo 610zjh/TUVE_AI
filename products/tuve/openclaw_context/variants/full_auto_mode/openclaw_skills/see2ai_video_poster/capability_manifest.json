@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_video_poster",
+  "version": "1.0.0",
+  "actions": ["see2ai_video_poster_v1"],
+  "supported_actions": ["Extract_Poster", "Prepare_Asset"],
+  "supported_domains": ["video", "image"],
+  "required_states": ["asset_preparation", "video_generation", "delivery"],
+  "is_generative": false,
+  "cost_weight": 1,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 65,
+  "do_NOT_trigger_when": [
+    "video_generation_requested",
+    "video_concat_requested",
+    "video_understanding_requested"
+  ],
+  "fallback_candidates": ["see2ai_storage_upload", "see2ai_video_understanding"]
+}

@@ -33,6 +33,7 @@ retention_reason: TUVE Agent 运行时上下文、skill 边界和配置模板的
 ## 适用场景
 
 - 维护 TUVE 的 Agent 行为、skill 边界、配置结构
+- 在 `TUVE_AI` 里做 TUVE 相关 meeting / 密听 / 需求挖掘时先补齐运行时上下文
 - 在 `TUVE_AI` 里写 TUVE 相关 PRD、meeting、ADR 时补充运行时上下文
 - 让 AI 在处理 TUVE 任务时，先遵守 `TUVE_AI` 总规则，再读取 TUVE 的产品级上下文
 
@@ -52,6 +53,7 @@ retention_reason: TUVE Agent 运行时上下文、skill 边界和配置模板的
 ## 建议读取顺序
 
 1. 先读 [`../../../AI_MANUAL.md`](../../../AI_MANUAL.md)
-2. 再读 [`runtime_contract.md`](runtime_contract.md)
-3. 然后按任务需要看 [`skill_registry.md`](skill_registry.md) 或 [`openclaw_config.template.json`](openclaw_config.template.json)
-4. 需要追根溯源时，再看 [`source_mapping.md`](source_mapping.md) 和原始仓库文件
+2. 如果需求还没讲清，先走 `meeting -> 需求挖掘 -> PRD -> 执行` 这条主流程
+3. 再读 [`runtime_contract.md`](runtime_contract.md)
+4. 然后按任务需要看 [`skill_registry.md`](skill_registry.md) 或 [`openclaw_config.template.json`](openclaw_config.template.json)
+5. 需要追根溯源时，再看 [`source_mapping.md`](source_mapping.md) 和原始仓库文件

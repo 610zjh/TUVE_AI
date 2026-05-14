@@ -8,6 +8,7 @@
 - **状态 / Status**: 草稿 / 评审中 / 已批准 / 实施中 / 已上线 / 已废弃
 - **关联客户 / 业务线 / Related**: <如适用>
 - **审阅人 / Reviewers**: <list>
+- **前置 meeting / Discovery Input**: <meeting 路径 / 无>
 
 ---
 
@@ -19,6 +20,14 @@
 ---
 
 ## 1. 背景与动机 / Context and Motivation
+
+### 前置输入 / Discovery Inputs
+
+- meeting / 密听纪要：...
+- 客户 / 业务 / 一线反馈：...
+- TUVE skill / config / Agent 上下文：`products/tuve/openclaw_context/`（如适用）
+
+### 背景与动机 / Context and Motivation
 
 （为什么要做这件事；不做会怎样；触发因素是什么）
 （2-3 段话，让 6 个月后的人能复原情境）
@@ -123,11 +132,20 @@ Each must be checkbox-style ✅ / ❌:
 
 ---
 
-## 9. 决策记录 / Decisions
+## 9. 待确认问题 / To-Be-Confirmed
+
+如果还有没确认但不影响先进入评审的问题，写在这里；编号用 `H1 / H2 / H3`：
+
+- [ ] H1：...
+- [ ] H2：...
+
+---
+
+## 10. 决策记录 / Decisions
 
 PRD 实施过程中冒出的取舍点。每条 mini-ADR 格式：
 
-### 决策 9.1 - YYYY-MM-DD
+### 决策 10.1 - YYYY-MM-DD
 - **背景**：实施 §X 时发现 ...
 - **选项**：A / B
 - **选择**：B
@@ -135,17 +153,17 @@ PRD 实施过程中冒出的取舍点。每条 mini-ADR 格式：
 
 ---
 
-## 10. 实施记录 / Implementation Log
-> 这是 AI 唯一可以追加的段。AI 不许改 §1-§9。
-> The only section AI may append. AI must not edit §1-§9.
+## 11. 实施记录 / Implementation Log
+> 这是 AI 唯一可以追加的段。AI 不许改 §1-§10。
+> The only section AI may append. AI must not edit §1-§10.
 
 ### YYYY-MM-DD 开工 / Kickoff
 - 已读 PRD §1-§9
 - 澄清问题（已问 + 已答）：...
-- 实施路径草图：见 §10.1
+- 实施路径草图：见 §11.1
 - 预计完成：YYYY-MM-DD
 
-### 10.1 Mermaid 实施图 / Implementation Diagram
+### 11.1 Mermaid 实施图 / Implementation Diagram
 ```mermaid
 graph TD
     A[阶段 1] --> B[阶段 2]
@@ -164,7 +182,7 @@ graph TD
 
 ---
 
-## 11. 完成快照 / Completion Snapshot
+## 12. 完成快照 / Completion Snapshot
 > 完工时填。逐条核对 §5 验收标准。
 
 - AC-1: ✅ 通过 / ⚠️ 部分 / ❌ 未做
@@ -175,11 +193,11 @@ graph TD
 
 ---
 
-## 12. 五件套收尾自查 / 5-Part Closeout Self-Check
+## 13. 五件套收尾自查 / 5-Part Closeout Self-Check
 
 - [ ] 测试：新功能冒烟 + 修 Bug 回归 + 反向断言清理
 - [ ] 版本登记：[`runbooks/`](../../runbooks/) 或本 PRD 的"实施记录"
-- [ ] PRD 完成快照：§11 已逐条核对
+- [ ] PRD 完成快照：§12 已逐条核对
 - [ ] 更新导航：[`AI_MANUAL.md`](../../AI_MANUAL.md) §4（如加了新工作流）
 - [ ] Bug 移位：known → fixed/YYYY-MM-DD.md
 

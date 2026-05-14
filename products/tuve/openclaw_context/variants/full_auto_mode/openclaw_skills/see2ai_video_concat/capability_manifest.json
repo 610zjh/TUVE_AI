@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_video_concat",
+  "version": "1.0.1",
+  "actions": ["see2ai_video_concat_v1"],
+  "supported_actions": ["Merge_Assets", "Compose_Output"],
+  "supported_domains": ["video"],
+  "required_states": ["video_generation", "delivery"],
+  "is_generative": false,
+  "cost_weight": 2,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 75,
+  "do_NOT_trigger_when": [
+    "video_generation_requested",
+    "less_than_two_video_urls",
+    "video_understanding_requested"
+  ],
+  "fallback_candidates": ["see2ai_storage_upload", "see2ai_video_poster"]
+}

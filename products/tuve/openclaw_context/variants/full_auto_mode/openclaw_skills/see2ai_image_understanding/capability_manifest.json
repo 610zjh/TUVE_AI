@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_image_understanding",
+  "version": "1.0.2",
+  "actions": ["see2ai_llm_doubao_v1"],
+  "supported_actions": ["Understand_Asset", "Extract_Information"],
+  "supported_domains": ["image"],
+  "required_states": ["idle", "planning", "asset_review"],
+  "is_generative": false,
+  "cost_weight": 1,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 65,
+  "do_NOT_trigger_when": [
+    "face_detection_only",
+    "image_generation_requested",
+    "local_file_not_uploaded"
+  ],
+  "fallback_candidates": ["see2ai_face_detection", "see2ai_image_normalize"]
+}

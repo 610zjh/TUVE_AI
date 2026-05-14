@@ -10,6 +10,8 @@
 - **参会人 / Attendees**: <list>
 - **缺席（影响决策的）/ Absent (decision-relevant)**: <list>
 - **录音 / Recording**: 是 / 否（如有，归档位置：...）
+- **会议类型 / Meeting Type**: 需求挖掘 / 方案决议 / 复盘 / 其他
+- **是否进入 PRD / Ready for PRD**: 是 / 否 / 待补信息
 
 ---
 
@@ -18,6 +20,29 @@
 1. ...
 2. ...
 3. ...
+
+---
+
+## 本次 meeting 的目标 / Goal of This Meeting
+
+- 这次是要先把需求挖清，还是在已清晰需求上做决议？
+- 明确写：**本次不是直接开工** / **本次可进入 PRD** / **本次仅收敛输入**
+
+---
+
+## 已确认的需求信号 / Confirmed Requirement Signals
+
+- 信号 1：...
+- 信号 2：...
+- 信号 3：...
+
+---
+
+## 待确认问题 / To-Be-Confirmed Questions
+
+- [ ] H1：...
+- [ ] H2：...
+- [ ] H3：...
 
 ---
 
@@ -55,6 +80,18 @@
 
 ---
 
+## 是否进入 PRD / PRD Readiness Check
+
+- [ ] 目标已可写成可验证标准
+- [ ] 非目标与边界已明确
+- [ ] 关键依赖 / 角色 / 约束已明确
+- [ ] 剩余未决问题不会扭曲 PRD 主体
+
+结论：
+- 进入 PRD / 继续补信息 / 下次再议
+
+---
+
 ## 行动项汇总 / Action Items Summary
 
 | # | 谁 / Who | 做什么 / What | 何时 / By When | 状态 / Status |
@@ -74,6 +111,7 @@
 
 ## 附：关联 / Related
 
+- 关联上下文: `products/tuve/openclaw_context/`（如适用）
 - 关联 PRD: ...
 - 关联 ADR: ...
 - 上次纪要: ...

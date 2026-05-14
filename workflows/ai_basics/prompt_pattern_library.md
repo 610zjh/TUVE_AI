@@ -211,3 +211,23 @@ Add it in the format above: pattern name, template, when to use.
 
 让这份库随业务进化。
 Let this library evolve with the business.
+
+---
+
+## 13. 需求密听 / Meeting 先行模式 / Discovery-Before-PRD Pattern
+
+适合：需求只有一句话、上下文还散、你怀疑直接写 PRD 会跑偏的时候。
+Best for: one-line requests, scattered context, or when jumping straight into a PRD would likely drift.
+
+```text
+我要处理 [主题]，但先不要直接写 PRD 或方案。
+
+请先把这次内容当成一场需求密听 / meeting 预处理，输出：
+1. 已确认的需求信号（最多 5 条）
+2. 待确认问题（按 H1 / H2 / H3 编号）
+3. 这次 meeting 最该问清楚的 top-5 问题
+4. 如果这些问题不问，后面最容易返工的地方
+5. 只有在信息足够时，才告诉我是否可以进入 PRD
+
+如果任务和 TUVE 运行时有关，请同时参考 `products/tuve/openclaw_context/`。
+```

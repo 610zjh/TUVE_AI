@@ -14,7 +14,8 @@ If your tool recognizes both, `AGENTS.md` takes precedence.
 2. **读完 [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LINES.md)**
 3. **扫一眼 [`issues/known.md`](issues/known.md)**
 4. **扫一眼 [`workspace_human/prd/`](workspace_human/prd/)**
-5. **等用户任务，在此之前不动文件** / Wait for the user's task; touch nothing before that
+5. **如果需求还模糊，先走 [`workflows/planning/meeting_prep_with_ai.md`](workflows/planning/meeting_prep_with_ai.md) 做 meeting / 密听 / 需求挖掘**
+6. **等用户任务，在此之前不动文件** / Wait for the user's task; touch nothing before that
 
 ---
 
@@ -37,7 +38,7 @@ Full text: [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LINES.md
 2. 客户面无内部信息 / No internal info in customer-facing copy
 3. 保密数据脱敏 / Redact confidential data
 4. Bug 单一登记本 / Issue SSOT
-5. 改代码先有 PRD / PRD before code
+5. 改代码先有 PRD；写 PRD 前若需求未收敛，先开 meeting / discovery / PRD before code; if requirements are still fuzzy, do meeting/discovery before the PRD
 6. 决策落字 / Decisions written down
 7. 单文件 ≤ 800 行 / File ≤ 800 lines
 8. 不可逆动作必须确认 / Irreversible actions need confirmation
@@ -110,8 +111,8 @@ First time here → [`training/getting_started/`](training/getting_started/) (14
 [`products/`](products/) 收录了兔展旗下 **SEE2AI** 平台与 **TUVE** 应用的公开产品介绍——功能、接入、能力、计费、支持。需要给客户/合作伙伴介绍这两款产品时从这里取材。
 [`products/`](products/) contains public product introductions for TUZHAN's **SEE2AI** platform and **TUVE** app — features, onboarding, capabilities, pricing, support. Source from here when introducing these two products to customers / partners.
 
-如果任务是维护 TUVE 的 Agent 运行时、skill 路由或 OpenClaw 配置上下文，先看 [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md)。
-If the task is maintaining TUVE runtime, skill routing, or OpenClaw config context, start at [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md).
+如果任务是维护 TUVE 的 Agent 运行时、skill 路由或 OpenClaw 配置上下文，先看 [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md)。如果这类任务的需求还没讲清楚，先用 meeting 把目标、上下文、边界挖清，再写 PRD 或直接执行。
+If the task is maintaining TUVE runtime, skill routing, or OpenClaw config context, start at [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md). If the request is still unclear, use a meeting/discovery pass first to clarify goals, context, and boundaries before drafting a PRD or executing.
 
 ---
 

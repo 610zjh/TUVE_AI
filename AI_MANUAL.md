@@ -31,7 +31,7 @@ Working without finishing this section = violating Rule 0.
 | 2 | 客户面文案严禁出现内部代号 / PRD 编号 / 模型 ID / 内部角色名 / Customer-facing copy NEVER exposes internal codes, PRD IDs, model IDs, internal role names | [`principles/subs/content_quality.md`](principles/subs/content_quality.md) |
 | 3 | 保密数据（客户数据、合同、销售管线）不得未脱敏进入 AI 上下文 / Confidential data (customer data, contracts, sales pipeline) never enters AI context unredacted | [`principles/subs/confidentiality.md`](principles/subs/confidentiality.md) |
 | 4 | Bug / 问题单一登记本（SSOT）：未修在 [`issues/known.md`](issues/known.md)，已修按日归档到 [`issues/fixed/YYYY-MM-DD.md`](issues/fixed/) / Issue tracking SSOT: unfixed in [`issues/known.md`](issues/known.md), fixed archived to [`issues/fixed/YYYY-MM-DD.md`](issues/fixed/) | [`principles/subs/bug_and_issue_tracking.md`](principles/subs/bug_and_issue_tracking.md) |
-| 5 | 改代码前先有 PRD / 任务条目；改 [`workspace_human/prd/`](workspace_human/prd/) 已写好的 PRD 是禁止的 / No code change without a PRD or PRD-mapped task; tampering with existing human-written PRDs is forbidden | [`principles/subs/prd_and_requirements.md`](principles/subs/prd_and_requirements.md) |
+| 5 | 改代码前先有 PRD；而写 PRD 前先做 meeting / 密听 / 需求挖掘，需求没挖清前禁止直接开干；改 [`workspace_human/prd/`](workspace_human/prd/) 已写好的 PRD 是禁止的 / No code change without a PRD; and a meeting / discovery pass must happen before drafting the PRD when requirements are still unclear | [`principles/subs/prd_and_requirements.md`](principles/subs/prd_and_requirements.md) |
 | 6 | 非平凡决策必须落字成 ADR / Non-trivial decisions must be written down as ADRs | [`principles/subs/decisions_and_records.md`](principles/subs/decisions_and_records.md) |
 | 7 | 单文件 ≤ 800 行；超过即提压缩提案 / Single file ≤ 800 lines; over → propose a rollup | [`principles/subs/anti_entropy.md`](principles/subs/anti_entropy.md) |
 | 8 | 不可逆动作（发外部消息 / 删数据 / 部署 / 退款）必须先和人确认 / Irreversible actions (sending external messages, deleting data, deploying, refunding) require human confirmation | [`principles/subs/working_with_ai.md`](principles/subs/working_with_ai.md) |
@@ -106,7 +106,8 @@ In order:
 2. 读 [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LINES.md) / Read [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LINES.md)
 3. 看一眼 [`issues/known.md`](issues/known.md) 知道当前未解决的问题清单 / Glance at [`issues/known.md`](issues/known.md) to see open issues
 4. 看一眼 [`workspace_human/prd/`](workspace_human/prd/) 知道当前正在做的需求 / Glance at [`workspace_human/prd/`](workspace_human/prd/) to see active PRDs
-5. 等用户告诉你今天的任务 / Wait for the user's actual task
+5. 如果用户的需求还在模糊阶段，先走 [`workflows/planning/meeting_prep_with_ai.md`](workflows/planning/meeting_prep_with_ai.md) 做 meeting / 密听 / 需求挖掘 / If the request is still fuzzy, start with [`workflows/planning/meeting_prep_with_ai.md`](workflows/planning/meeting_prep_with_ai.md)
+6. 等用户告诉你今天的任务，或在需求已明确后再进入对应工作流 / Wait for the user's actual task, or enter the relevant workflow only after the requirement is clarified
 
 不要在第 5 步之前自作主张改任何文件。
 Do not modify any file before step 5 unless the user explicitly asked.
@@ -117,7 +118,8 @@ Do not modify any file before step 5 unless the user explicitly asked.
 
 | 你今天要做的事 / What you're doing today | 从哪开始 / Start here |
 |---|---|
-| 写一份新 PRD / Draft a new PRD | [`workflows/planning/writing_a_prd.md`](workflows/planning/writing_a_prd.md) → [`templates/prd/`](templates/prd/) |
+| 需求还不清楚，需要先密听 / 开 meeting / Requirements are still unclear; need discovery first | [`workflows/planning/meeting_prep_with_ai.md`](workflows/planning/meeting_prep_with_ai.md) → [`templates/meeting_notes/`](templates/meeting_notes/) |
+| 写一份新 PRD / Draft a new PRD | 先确认已经过一轮 meeting / 需求挖掘，再读 [`workflows/planning/writing_a_prd.md`](workflows/planning/writing_a_prd.md) → [`templates/prd/`](templates/prd/) |
 | 把 PRD 落成代码 / Implement a PRD | [`workflows/engineering/prd_to_implementation.md`](workflows/engineering/prd_to_implementation.md) |
 | 修 Bug / Fix a bug | [`workflows/engineering/debugging_workflow.md`](workflows/engineering/debugging_workflow.md) → 找 [`issues/known.md`](issues/known.md) 里的条目 |
 | 整理今天的客户电话 / Process today's customer call | [`workflows/customer_communication/sales_call_followup.md`](workflows/customer_communication/sales_call_followup.md) → [`templates/sales_call_summary/`](templates/sales_call_summary/) |
@@ -140,7 +142,29 @@ Do not modify any file before step 5 unless the user explicitly asked.
 
 ---
 
-## 5. PRD 实施全生命周期清单 / PRD Implementation Lifecycle Checklist
+## 5. 需求到实施的标准主流程 / Standard Flow from Requirement to Implementation
+
+默认顺序如下，除非用户明确说明需求已经充分收敛：
+Default order unless the user explicitly says the requirement is already clarified:
+
+1. **Meeting / 密听 / 需求挖掘**：先把目标、约束、范围、未决问题挖出来；不要一句话需求就直接写方案
+2. **PRD**：把 meeting 里已经确认的内容固化成正式产品依据；meeting 只是输入，不是实现依据
+3. **Implementation / Execution**：代码、内容、运营动作等实际落地
+4. **ADR / Issues / Closeout**：把中途决策、问题和收尾动作补齐
+
+判断是否该先开 meeting，看这 4 个信号：
+
+- [ ] 用户目标还停留在一句话，没有成功标准
+- [ ] 范围、边界、角色、约束里至少有一项含糊
+- [ ] 你已经能预见会出现 3 个以上澄清问题
+- [ ] 任务与 TUVE Agent / skill / config 上下文相关，但上下文还没对齐
+
+只要任意一项为真，就先开 meeting，不要直接写 PRD。
+If any item is true, run the meeting/discovery step first instead of jumping into the PRD.
+
+---
+
+## 6. PRD 实施全生命周期清单 / PRD Implementation Lifecycle Checklist
 
 任何"实现 PRD-XXXX"类任务，第一步必须过这份检查表（不要等人提醒）：
 For any "implement PRD-XXXX" task, run through this checklist first (don't wait to be reminded):
@@ -168,7 +192,7 @@ Any item missing → forbidden to say "done".
 
 ---
 
-## 6. 工具特性差异 / Tool-Specific Notes
+## 7. 工具特性差异 / Tool-Specific Notes
 
 四个入口文件（CLAUDE.md / AGENTS.md / .cursorrules / CODEX.md）内容一致，但底层工具能力略有差异：
 The four entry files share content but the underlying tools differ slightly:
@@ -185,7 +209,7 @@ Tool selection guidance: [`workflows/ai_basics/which_tool_for_which_job.md`](wor
 
 ---
 
-## 7. 写在最后 / Final Note
+## 8. 写在最后 / Final Note
 
 这份手册不是"AI 的镣铐"，而是"AI 的协作合同"。
 This manual is not "shackles for the AI" — it is the **collaboration contract** with the AI.

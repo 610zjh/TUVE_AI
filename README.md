@@ -3,6 +3,9 @@
 > 这不是某一个项目的代码仓库，而是 TUZHAN 全公司"如何与 AI 协作把工作做完"的工作底座。
 > This is not a project codebase. It is TUZHAN's company-wide foundation for **getting work done with AI**.
 
+> **当前这份仓库重点只抓两件事：工作流，以及 TUVE 的 config / skill 上下文。**
+> **This repo currently focuses on two things: workflow, and TUVE's config / skill context.**
+
 > **本仓库同时承载了 2026 年内部培训《如何高效用 AI 完成工作》的全部教材**，详见 [`training/`](training/)。
 > **This repository also contains the full training materials for the 2026 internal session "Effectively Using AI to Get Work Done"** — see [`training/`](training/).
 
@@ -62,7 +65,18 @@ Open your AI assistant and send the first message:
 AI 会自己把入口文件、红线、导航地图都串起来。之后你就可以直接说"帮我写一份 X"或者"修一下 Y"。
 The AI will chain the entry files, red lines, and navigation map on its own. From there you can say "draft an X" or "fix Y" naturally.
 
-### 第三步：用模板开工 / Step 3 — Start work from a template
+### 第三步：先判断是不是该开 meeting / Step 3 — Decide Whether You Need a Meeting First
+
+不要一句话需求就直接让 AI 写 PRD 或开做。先判断：
+
+- 目标清楚吗？
+- 成功标准清楚吗？
+- 边界和非目标清楚吗？
+- 还有 3 个以上关键问题没搞清吗？
+
+如果有任意一项不清楚，先走 [`workflows/planning/meeting_prep_with_ai.md`](workflows/planning/meeting_prep_with_ai.md)，用 [`templates/meeting_notes/`](templates/meeting_notes/) 先做一次 meeting / 密听 / 需求挖掘。
+
+### 第四步：再用模板开工 / Step 4 — Then Start from a Template
 
 不要让 AI 凭空发挥。从 [`templates/`](templates/) 里挑最贴近你今天工作的模板，让 AI 帮你填。
 Don't let AI improvise from scratch. Pick the template closest to today's work from [`templates/`](templates/) and have AI fill it in.
@@ -71,6 +85,7 @@ Don't let AI improvise from scratch. Pick the template closest to today's work f
 - 写一份给客户的项目简报 → 用 [`templates/customer_brief/`](templates/customer_brief/)
 - 把今天的客户电话整理成跟进材料 → 用 [`templates/sales_call_summary/`](templates/sales_call_summary/)
 - 给一支 30 秒短视频写脚本 → 用 [`templates/video_script/`](templates/video_script/)
+- 需求还没挖清 → 先用 [`templates/meeting_notes/`](templates/meeting_notes/)
 - 写一份产品需求文档 → 用 [`templates/prd/`](templates/prd/)
 - 给客户介绍 SEE2AI / TUVE → 参考 [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) 或 [`products/tuve/app_overview.md`](products/tuve/app_overview.md) / Introduce SEE2AI / TUVE to a customer → see `products/see2ai/platform_overview.md` or `products/tuve/app_overview.md`
 
@@ -121,6 +136,9 @@ TUVE_AI/
 
 2. **流程比聪明更重要。** 一个普通方案 + 严密流程 > 一个绝妙点子 + 凭直觉操作。这个仓库里的红线、模板、工作流就是把"严密流程"做成了肌肉记忆。
    **Process beats brilliance.** A solid solution executed against a tight process > a brilliant idea executed by intuition. The red lines, templates, and workflows here turn the tight process into muscle memory.
+
+   在这份仓库里，默认顺序是：**meeting / 密听 / 需求挖掘 -> PRD -> 执行**。需求没挖清前，不直接开干。
+   In this repo, the default order is: **meeting / discovery -> PRD -> execution**. No jumping straight into execution while the requirement is still fuzzy.
 
 3. **写下来的事才算数。** PRD、Bug、决策记录、会议结论——口头上的不算。这不是官僚主义，是为了让你 6 个月后回来还能搞清楚自己当时为什么这么做。
    **If it's not written, it didn't happen.** PRDs, bugs, decision records, meeting outcomes — verbal doesn't count. This is not bureaucracy; it's so future-you (6 months later) can still tell why you made this call.

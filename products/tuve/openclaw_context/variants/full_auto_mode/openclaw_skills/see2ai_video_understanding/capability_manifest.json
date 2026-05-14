@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_video_understanding",
+  "version": "1.0.1",
+  "actions": ["see2ai_llm_doubao_v1"],
+  "supported_actions": ["Understand_Asset", "Extract_Information"],
+  "supported_domains": ["video"],
+  "required_states": ["idle", "planning", "asset_review"],
+  "is_generative": false,
+  "cost_weight": 2,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 65,
+  "do_NOT_trigger_when": [
+    "video_generation_requested",
+    "video_concat_requested",
+    "poster_extraction_only"
+  ],
+  "fallback_candidates": ["see2ai_video_poster", "see2ai_storage_upload"]
+}

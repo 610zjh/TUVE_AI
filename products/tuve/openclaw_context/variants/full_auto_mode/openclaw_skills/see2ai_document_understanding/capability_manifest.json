@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_document_understanding",
+  "version": "1.0.2",
+  "actions": ["see2ai_llm_gemini_pro_v1"],
+  "supported_actions": ["Understand_Asset", "Extract_Information"],
+  "supported_domains": ["document"],
+  "required_states": ["idle", "planning", "asset_review"],
+  "is_generative": false,
+  "cost_weight": 2,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 65,
+  "do_NOT_trigger_when": [
+    "local_file_not_uploaded",
+    "image_understanding_requested",
+    "video_understanding_requested"
+  ],
+  "fallback_candidates": ["see2ai_storage_upload"]
+}

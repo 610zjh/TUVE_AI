@@ -10,6 +10,9 @@
 **PRD 不是文档，是合同。** 它把"我们要做什么"用大家能复核的方式写下来，让今天的承诺 6 个月后还能被验证。
 **A PRD is not a document; it's a contract.** It writes down "what we're going to build" in a verifiable form so today's commitment can be checked 6 months later.
 
+但在 TUVE_AI 的流程里，**PRD 不是第一步**。如果需求还没挖清，先去 [`meeting_prep_with_ai.md`](meeting_prep_with_ai.md) 做 meeting / 密听 / 需求挖掘，再回来写 PRD。
+But in TUVE_AI, **a PRD is not step one**. If the requirement is still unclear, go to [`meeting_prep_with_ai.md`](meeting_prep_with_ai.md) first for meeting/discovery, then come back.
+
 ---
 
 ## 一份好 PRD 的 8 个标准 / 8 Standards of a Good PRD
@@ -28,12 +31,27 @@ Template at [`templates/prd/`](../../templates/prd/).
 
 ---
 
+## 写 PRD 之前的前置条件 / Preconditions Before Drafting a PRD
+
+满足下面条件，再开始写：
+
+- [ ] 已经有一轮 meeting / 密听，或者用户明确说需求已收敛
+- [ ] 已能说清楚目标、非目标、成功标准
+- [ ] 关键角色、边界、依赖和限制条件不再靠猜
+- [ ] 若任务涉及 TUVE Agent / skill / config，已读相关上下文并对齐
+- [ ] 仍未确认的问题已经少到不会扭曲 PRD 主体
+
+如果以上任意一项不满足，不要硬写 PRD，回到 [`meeting_prep_with_ai.md`](meeting_prep_with_ai.md)。
+
+---
+
 ## 用 AI 协助起草的 5 步 / 5 Steps with AI
 
 ### 步 1：背景拼图 / Step 1: Context Assembly
 
 ```
 我要给"<功能名>"起草 PRD。背景信息散在以下几处：
+- 前置 meeting / 密听纪要（粘贴或给路径）
 - 客户访谈纪要（粘贴）
 - 内部讨论记录（粘贴）
 - 销售反馈（粘贴）
@@ -43,6 +61,12 @@ Template at [`templates/prd/`](../../templates/prd/).
 - 6 个月后的新同事读完能搞清楚"为什么要做这件事"
 - 不要捏造没有出现在材料里的事实
 - 输出后，列出你最不确定的 3 个点
+```
+
+如果任务和 TUVE 运行时相关，再补一条：
+
+```
+- TUVE runtime / skill / config 上下文：参考 `products/tuve/openclaw_context/README.md` 及相关子文件
 ```
 
 ### 步 2：目标和非目标 / Step 2: Goals and Non-Goals
@@ -99,6 +123,7 @@ PM's job is to **pick and refine** from candidates. AI's job is to spread the ca
 While writing PRDs:
 
 - 红线 #5：改代码前必须有 PRD（**反过来不必**——不是每份 PRD 都有代码改动，行政 / 流程 PRD 也合法）/ Code requires PRD; not every PRD requires code
+- 写 PRD 前如果需求还模糊，先开 meeting / 密听，不允许一句话需求直接进入 PRD / If requirements are still fuzzy, a meeting/discovery pass must come before the PRD
 - 红线 #12：[`workspace_human/`](../../workspace_human/) 是 AI 只读。新 PRD 起草完成后**由人**保存到 `workspace_human/prd/PRD-XXXX_*.md`，不让 AI 自己写到那 / `workspace_human/` is AI read-only; **a human** saves the new PRD into `workspace_human/prd/`
 - 红线 #15：paywall / 分层 PRD 必含"主次审视" / Paywall PRDs require "Priority Audit"
 - 红线 #6：PRD 进行中冒出的取舍点要落字成 ADR 或写入 PRD 的"决策"段 / Mid-flight tradeoffs go into ADRs or the PRD's Decisions section

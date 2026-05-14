@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_text_to_image_uniworld",
+  "version": "2.1.0",
+  "actions": ["see2ai_image_uniworld_v2"],
+  "supported_actions": ["Invoke_Generation"],
+  "supported_domains": ["image", "design", "presentation"],
+  "required_states": ["idle", "planning", "image_generation"],
+  "is_generative": true,
+  "cost_weight": 2,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 90,
+  "do_NOT_trigger_when": [
+    "has_reference_image_for_editing",
+    "video_task",
+    "image_understanding_task"
+  ],
+  "fallback_candidates": ["see2ai_text_to_image"]
+}

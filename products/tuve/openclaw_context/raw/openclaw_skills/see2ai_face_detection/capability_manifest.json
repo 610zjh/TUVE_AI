@@ -1,0 +1,19 @@
+{
+  "skill_id": "see2ai_face_detection",
+  "version": "1.0.1",
+  "actions": ["see2ai_face_detection_v1"],
+  "supported_actions": ["Inspect_Asset", "Detect_Face"],
+  "supported_domains": ["image"],
+  "required_states": ["idle", "planning", "asset_preparation", "video_generation"],
+  "is_generative": false,
+  "cost_weight": 1,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 80,
+  "do_NOT_trigger_when": [
+    "open_ended_image_question",
+    "video_face_analysis",
+    "local_file_not_uploaded"
+  ],
+  "fallback_candidates": ["see2ai_image_normalize", "see2ai_image_understanding"]
+}

@@ -1,0 +1,22 @@
+{
+  "skill_id": "see2ai_seedance_prompt_renderer",
+  "version": "2.0.0",
+  "actions": ["see2ai_scriptwriting_v1"],
+  "supported_actions": ["Render_Prompt"],
+  "supported_domains": ["video", "internal"],
+  "required_states": ["video_generation"],
+  "is_generative": false,
+  "cost_weight": 1,
+  "availability": "workflow_only",
+  "routing_visibility": "internal",
+  "invocation_policy": "workflow_only",
+  "user_facing": false,
+  "supports_hot_update": true,
+  "priority": 20,
+  "do_NOT_trigger_when": [
+    "direct_user_request",
+    "scriptwriting_requested",
+    "missing_shot_data"
+  ],
+  "fallback_candidates": ["see2ai_video_generation"]
+}

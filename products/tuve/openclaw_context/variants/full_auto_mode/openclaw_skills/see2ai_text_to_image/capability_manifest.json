@@ -1,0 +1,23 @@
+{
+  "skill_id": "see2ai_text_to_image",
+  "version": "2.3.0",
+  "actions": [
+    "see2ai_image_generation_v1",
+    "see2ai_image_generation_fast_v1",
+    "see2ai_image_generation_alternative_v1"
+  ],
+  "supported_actions": ["Invoke_Generation"],
+  "supported_domains": ["image"],
+  "required_states": ["idle", "planning", "image_generation"],
+  "is_generative": true,
+  "cost_weight": 2,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 70,
+  "do_NOT_trigger_when": [
+    "has_reference_image",
+    "typography_or_layout_first",
+    "video_task"
+  ],
+  "fallback_candidates": ["see2ai_text_to_image_uniworld", "see2ai_image_to_image"]
+}

@@ -1,0 +1,20 @@
+{
+  "skill_id": "see2ai_video_generation",
+  "version": "4.0.0",
+  "actions": ["see2ai_video_generation_v1"],
+  "supported_actions": ["Invoke_Generation"],
+  "supported_domains": ["video"],
+  "required_states": ["planning", "video_generation"],
+  "is_generative": true,
+  "cost_weight": 5,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 90,
+  "do_NOT_trigger_when": [
+    "video_concat_requested",
+    "video_understanding_requested",
+    "poster_extraction_requested",
+    "missing_user_confirmation"
+  ],
+  "fallback_candidates": ["see2ai_video_concat", "see2ai_video_understanding", "see2ai_video_poster"]
+}

@@ -1,0 +1,21 @@
+{
+  "skill_id": "see2ai_storage_upload",
+  "version": "1.0.0",
+  "actions": ["see2ai_storage_upload_v1"],
+  "supported_actions": ["Upload_Asset", "Prepare_Asset"],
+  "supported_domains": ["image", "video", "document", "file"],
+  "required_states": ["idle", "planning", "asset_preparation"],
+  "is_generative": false,
+  "cost_weight": 1,
+  "availability": "active",
+  "supports_hot_update": true,
+  "priority": 95,
+  "do_NOT_trigger_when": [
+    "already_public_url",
+    "remote_download_requested",
+    "directory_upload_requested",
+    "webp_without_conversion",
+    "file_over_50mb"
+  ],
+  "fallback_candidates": []
+}
