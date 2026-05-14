@@ -1,6 +1,6 @@
 ---
 name: PRD-0002 · 按角色分组的新人开局引导（getting_started） / Role-Based Getting-Started Onboarding
-description: 给第一次打开 TUZHAN_AI 仓库的非培训听众提供一份"按角色 → 第一句脚本 → 本周三件事"的开局引导，覆盖短视频 AI Agent 团队从客户接触到产品交付的 14 个业务岗位（含跨职能兜底）/ Role-based onboarding for first-time non-attendee users, covering 14 business roles (including cross-functional fallback) across the short-video AI Agent product lifecycle
+description: 给第一次打开 TUVE_AI 仓库的非培训听众提供一份"按角色 → 第一句脚本 → 本周三件事"的开局引导，覆盖短视频 AI Agent 团队从客户接触到产品交付的 14 个业务岗位（含跨职能兜底）/ Role-based onboarding for first-time non-attendee users, covering 14 business roles (including cross-functional fallback) across the short-video AI Agent product lifecycle
 type: prd
 retention: permanent
 retention_reason: 仓库新人入口的根 PRD，定义"没参加培训也能立刻用"的最低保证；任何后续 onboarding 类改动都默认在本份之上 / Root PRD for first-time onboarding into the repo; subsequent onboarding work is implicitly downstream of this one

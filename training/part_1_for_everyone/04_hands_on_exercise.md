@@ -23,7 +23,7 @@ retention_reason: 培训中实操段
 
 > 现在所有人打开自己的电脑，跟着我做。
 >
-> 步骤 1：从 [仓库链接 / 共享盘 / U 盘] 把 `TUZHAN_AI` 仓库下载到本地
+> 步骤 1：从 [仓库链接 / 共享盘 / U 盘] 把 `TUVE_AI` 仓库下载到本地
 > 步骤 2：用 Cursor / Claude Code / Trae / Codex 打开这个仓库
 > 步骤 3：发第一条消息给 AI：
 >

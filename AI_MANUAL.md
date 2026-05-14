@@ -51,7 +51,7 @@ Full red lines: [`principles/000_CORE_RED_LINES.md`](principles/000_CORE_RED_LIN
 ## 2. 仓库地图 / Repository Map
 
 ```
-TUZHAN_AI/
+TUVE_AI/
 ├── AI_MANUAL.md                 ← 你正在看的这份 / this file
 ├── README.md                    ← 给人看的总入口 / human-facing landing page
 ├── principles/                  ← 红线 + 12 份子原则 / red lines + 12 sub-principles
@@ -80,8 +80,9 @@ TUZHAN_AI/
 │   └── decision_records/        ← ADR 怎么写
 ├── templates/                   ← 复制即用的模板（PRD / Bug / 简报 / 脚本 等）
 ├── case_studies/                ← 三个跨职能真实案例
-├── products/                    ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
-│                                  Public product introductions for TUZHAN's SEE2AI and TUVE
+├── products/                    ← 兔展旗下 SEE2AI 与 TUVE 的产品材料
+│                                  Product materials for TUZHAN's SEE2AI and TUVE
+│                                  其中 `products/tuve/openclaw_context/` 额外收录 TUVE 的运行时上下文包
 ├── handoffs/                    ← 日常工作传递区（inbox / outbox，AI 可写）
 │                                  Daily handoff zone (inbox / outbox, AI-writable)
 ├── workspace_human/             ← 人写的 PRD 和会议纪要（AI 只读）
@@ -131,6 +132,7 @@ Do not modify any file before step 5 unless the user explicitly asked.
 | 做市场/竞品/客户访谈分析 / Market / competitor / customer-interview analysis | [`workflows/research_and_analysis/`](workflows/research_and_analysis/) |
 | 给客户介绍 SEE2AI 平台 / Introduce SEE2AI to a customer | [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) |
 | 给客户介绍 TUVE 应用 / Introduce TUVE to a customer | [`products/tuve/app_overview.md`](products/tuve/app_overview.md) |
+| 维护 TUVE Agent / Skill / Config 上下文 / Maintain TUVE runtime context | [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md) |
 | 协助客户首次接入 SEE2AI / Help customer onboard to SEE2AI | [`products/see2ai/getting_started.md`](products/see2ai/getting_started.md) — 5 分钟跑通首次调用 / first call in 5 min |
 | 客户问 SEE2AI 怎么收费 / Customer asks about SEE2AI pricing | [`products/see2ai/pricing_and_account.md`](products/see2ai/pricing_and_account.md) |
 | 客户遇到 SEE2AI / TUVE 报错 / Customer hits SEE2AI / TUVE errors | [`products/see2ai/support.md`](products/see2ai/support.md) · [`products/tuve/support.md`](products/tuve/support.md) |

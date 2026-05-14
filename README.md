@@ -1,4 +1,4 @@
-# TUZHAN_AI · 工作方法手册 / Work-with-AI Playbook
+# TUVE_AI · 工作方法手册 / Work-with-AI Playbook
 
 > 这不是某一个项目的代码仓库，而是 TUZHAN 全公司"如何与 AI 协作把工作做完"的工作底座。
 > This is not a project codebase. It is TUZHAN's company-wide foundation for **getting work done with AI**.
@@ -10,7 +10,7 @@
 
 ## 第一次打开这个仓库？/ First Time Here?
 
-如果这是你第一次打开 TUZHAN_AI，请先去 [`training/getting_started/`](training/getting_started/) —— 14 个角色 × "第一句脚本 + 本周三件事"，每份 5 分钟读完就能开工。
+如果这是你第一次打开 TUVE_AI，请先去 [`training/getting_started/`](training/getting_started/) —— 14 个角色 × "第一句脚本 + 本周三件事"，每份 5 分钟读完就能开工。
 If this is your first time, go to [`training/getting_started/`](training/getting_started/) — 14 roles × "first opening line + 3 things this week", 5 minutes each, ready to start work today.
 
 ---
@@ -37,8 +37,8 @@ Regardless of role, **first-time readers should complete [`workflows/ai_basics/`
 
 ### 第一步：让你的 AI 工具认识这个文件夹 / Step 1 — Let your AI tool recognize this folder
 
-无论你用 Claude Code / Cursor / Codex / Trae，把整个 `TUZHAN_AI/` 文件夹拖进它的工作目录即可。
-Whichever tool you use (Claude Code / Cursor / Codex / Trae), drop the whole `TUZHAN_AI/` folder into its working directory.
+无论你用 Claude Code / Cursor / Codex / Trae，把整个 `TUVE_AI/` 文件夹拖进它的工作目录即可。
+Whichever tool you use (Claude Code / Cursor / Codex / Trae), drop the whole `TUVE_AI/` folder into its working directory.
 
 四个工具的入口文件已经预先写好：
 The four agent entry files are pre-written:
@@ -79,7 +79,7 @@ Don't let AI improvise from scratch. Pick the template closest to today's work f
 ## 整体目录地图 / Repository Map
 
 ```
-TUZHAN_AI/
+TUVE_AI/
 ├── AI_MANUAL.md              ← 项目总导航（AI 第一个读的文件）
 │                                Project navigation (the first file AI reads)
 ├── principles/               ← 全员通用的红线和准则
@@ -90,8 +90,9 @@ TUZHAN_AI/
 │                                Reusable work templates (PRD, brief, script, etc.)
 ├── case_studies/             ← 跨职能真实工作案例（替换为你团队的真实案例）
 │                                Cross-functional worked examples (replace with your team's)
-├── products/                 ← 兔展旗下 SEE2AI 与 TUVE 的公开产品介绍材料
-│                                Public product introductions for TUZHAN's SEE2AI and TUVE
+├── products/                 ← 兔展旗下 SEE2AI 与 TUVE 的产品材料
+│                                Product materials for TUZHAN's SEE2AI and TUVE
+│                                `products/tuve/openclaw_context/` 额外收录 TUVE 运行时上下文包
 ├── handoffs/                 ← 日常工作传递区（inbox / outbox，AI 可写）
 │                                Daily handoff zone (inbox / outbox, AI-writable)
 ├── workspace_human/          ← 人写的 PRD / 会议纪要（AI 只读）
@@ -184,5 +185,5 @@ Current version: **v1.0** (2026-05-10, first public release).
 
 ## License
 
-本仓库内容采用 CC BY 4.0 协议（见 [LICENSE](LICENSE)）。意味着你可以自由复用、修改、商用，只需要标注来源（"基于 TUZHAN_AI 工作方法手册"）。
-Released under CC BY 4.0 (see [LICENSE](LICENSE)). You may reuse, modify, and use commercially with attribution ("based on TUZHAN_AI Work-with-AI Playbook").
+本仓库内容采用 CC BY 4.0 协议（见 [LICENSE](LICENSE)）。意味着你可以自由复用、修改、商用，只需要标注来源（"基于 TUVE_AI 工作方法手册"）。
+Released under CC BY 4.0 (see [LICENSE](LICENSE)). You may reuse, modify, and use commercially with attribution ("based on TUVE_AI Work-with-AI Playbook").

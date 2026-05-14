@@ -147,6 +147,11 @@ For more detailed data security inquiries, file a "business inquiry" ticket at `
 
 ## 10. 还想了解什么 / What else
 
+### 10.1 面向内部维护与 AI 协作 / For internal maintenance and AI collaboration
+
+如果当前任务不是“向客户介绍 TUVE”，而是要维护 TUVE 的 Agent 运行时、skill 路由、配置模板或 OpenClaw 上下文，请先看 [`openclaw_context/`](openclaw_context/)。
+If the task is not customer introduction but maintaining TUVE's runtime, skill routing, config templates, or OpenClaw context, start at [`openclaw_context/`](openclaw_context/).
+
 | 想知道 / Want to know | 去哪 / Go to |
 |---|---|
 | 怎么开始做第一支视频 / How to make my first video | [`getting_started.md`](getting_started.md) |

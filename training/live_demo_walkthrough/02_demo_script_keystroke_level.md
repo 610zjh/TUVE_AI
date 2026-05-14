@@ -16,7 +16,7 @@ retention_reason: 演讲者需要的"按键级"演示脚本
 ### A.1 打开 IDE 和仓库
 
 - 打开 Claude Code（或 Cursor，看你练得熟的）
-- 打开 `/Users/.../TUZHAN_AI/`（或 demo 用的副本路径）
+- 打开 `/Users/.../TUVE_AI/`（或 demo 用的副本路径）
 - 确认 IDE 字号大（14-16pt 或更大）
 
 ### A.2 第一条消息
@@ -105,7 +105,7 @@ retention_reason: 演讲者需要的"按键级"演示脚本
 ### B.1 切到终端
 
 ```bash
-cd /Users/.../TUZHAN_AI/projects/customer_brief_generator/
+cd /Users/.../TUVE_AI/projects/customer_brief_generator/
 ls examples/
 ```
 

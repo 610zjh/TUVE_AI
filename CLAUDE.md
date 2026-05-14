@@ -84,6 +84,7 @@ When red lines are silent, fall back here. Decide autonomously when you can; oth
 | 上线自查 / Pre-deploy check | [`workflows/engineering/deployment_hygiene.md`](workflows/engineering/deployment_hygiene.md) |
 | 出故障 / Production incident | [`workflows/operations/incident_response_workflow.md`](workflows/operations/incident_response_workflow.md) |
 | 给客户介绍 SEE2AI / TUVE / Introduce SEE2AI / TUVE to a customer | [`products/see2ai/platform_overview.md`](products/see2ai/platform_overview.md) · [`products/tuve/app_overview.md`](products/tuve/app_overview.md) |
+| 维护 TUVE Agent / Skill / Config 上下文 / Maintain TUVE runtime context | [`products/tuve/openclaw_context/README.md`](products/tuve/openclaw_context/README.md) |
 | 不知道从哪开始 / Don't know | [`training/getting_started/`](training/getting_started/)（14 角色开局引导）/ [`workflows/ai_basics/`](workflows/ai_basics/)（基础课） |
 
 完整任务-入口表见 [`AI_MANUAL.md`](AI_MANUAL.md) §4。

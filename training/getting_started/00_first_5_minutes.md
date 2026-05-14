@@ -7,7 +7,7 @@
 
 ## §1 让 AI 认识这个仓库 / Make AI Recognize This Repo
 
-把整个 `TUZHAN_AI/` 文件夹拖进你的 AI 工具（Claude Code / Cursor / Codex / Trae）的工作目录。四个入口文件 [`CLAUDE.md`](../../CLAUDE.md) / [`AGENTS.md`](../../AGENTS.md) / [`.cursorrules`](../../.cursorrules) / [`CODEX.md`](../../CODEX.md) 已经预先写好——AI 启动时会自动读，不用你手动喂。
+把整个 `TUVE_AI/` 文件夹拖进你的 AI 工具（Claude Code / Cursor / Codex / Trae）的工作目录。四个入口文件 [`CLAUDE.md`](../../CLAUDE.md) / [`AGENTS.md`](../../AGENTS.md) / [`.cursorrules`](../../.cursorrules) / [`CODEX.md`](../../CODEX.md) 已经预先写好——AI 启动时会自动读，不用你手动喂。
 
 详细工具配置：[`README.md` §"5 分钟快速开始"](../../README.md)。
 

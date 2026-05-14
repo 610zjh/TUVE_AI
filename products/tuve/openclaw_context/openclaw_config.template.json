@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "lastTouchedVersion": "template",
+    "lastTouchedAt": "2026-05-14T00:00:00Z"
+  },
+  "env": {
+    "SEE2AI_API_KEY": "<SEE2AI_API_KEY>"
+  },
+  "wizard": {
+    "lastRunAt": null,
+    "lastRunVersion": null,
+    "lastRunCommand": null,
+    "lastRunMode": "local"
+  },
+  "update": {
+    "channel": "stable",
+    "checkOnStart": false,
+    "auto": {
+      "enabled": false
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "see2ai": {
+        "baseUrl": "<SEE2AI_BASE_URL>",
+        "apiKey": "<SEE2AI_API_KEY>",
+        "api": "openai-responses",
+        "models": [
+          {
+            "id": "gpt-5.4",
+            "name": "GPT 5.4",
+            "api": "openai-responses",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "qwen-plus",
+            "name": "Qwen Plus",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "see2ai/gpt-5.4",
+        "fallbacks": [
+          "see2ai/qwen-plus"
+        ]
+      },
+      "imageModel": "see2ai/qwen-plus",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "timeoutSeconds": 600,
+      "subagents": {
+        "maxConcurrent": 3,
+        "runTimeoutSeconds": 1200
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "skills": [
+          "see2ai_face_detection",
+          "see2ai_image_normalize",
+          "see2ai_image_to_image",
+          "see2ai_storage_upload",
+          "see2ai_text_to_image",
+          "see2ai_text_to_image_uniworld",
+          "see2ai_video_concat",
+          "see2ai_video_generation",
+          "see2ai_video_poster"
+        ],
+        "tools": {
+          "alsoAllow": [
+            "<OPTIONAL_TOOL_BINDINGS>"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "allow": [
+      "messaging"
+    ]
+  },
+  "bindings": [],
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {},
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [],
+      "allowInsecureAuth": false,
+      "dangerouslyDisableDeviceAuth": false
+    },
+    "auth": {
+      "token": "<OPENCLAW_TOKEN>"
+    },
+    "http": {
+      "endpoints": {
+        "responses": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "plugins": {}
+}

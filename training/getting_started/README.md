@@ -1,7 +1,7 @@
 # getting_started · 索引页 / Index
 
-> 第一次打开 TUZHAN_AI 仓库的开局引导。**5 分钟读完一份 → 当天就能开工**。
-> First-time onboarding for TUZHAN_AI. **Read one role file in 5 minutes → start work today.**
+> 第一次打开 TUVE_AI 仓库的开局引导。**5 分钟读完一份 → 当天就能开工**。
+> First-time onboarding for TUVE_AI. **Read one role file in 5 minutes → start work today.**
 
 ---
 

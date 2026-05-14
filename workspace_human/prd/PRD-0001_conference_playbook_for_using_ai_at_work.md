@@ -1,6 +1,6 @@
 ---
 name: PRD-0001 · 内部培训《如何高效用 AI 完成工作》工作底座 / Conference Playbook for "Effectively Using AI to Get Work Done"
-description: 本仓库（TUZHAN_AI）作为一份"工作底座 + 培训教材"的产品需求 / Repo TUZHAN_AI as a "work-baseline + training-materials" product requirement
+description: 本仓库（TUVE_AI）作为一份"工作底座 + 培训教材"的产品需求 / Repo TUVE_AI as a "work-baseline + training-materials" product requirement
 type: prd
 retention: permanent
 retention_reason: 本仓库的"为什么存在 / 给谁用 / 边界在哪"的根 PRD，其他所有 PRD 默认建立在本份之上 / The root PRD of this repo — every other PRD here is implicitly downstream of this one
@@ -51,7 +51,7 @@ retention_reason: 本仓库的"为什么存在 / 给谁用 / 边界在哪"的根
 
 ### 目标 / Goals
 
-- ✅ **G1**：交付一份**完整、可拷贝、可二次复用**的仓库 `TUZHAN_AI/`，把全公司"和 AI 协作"的红线 / 工作流 / 模板 / 案例都收进去；任何同事或合作伙伴拷一份回去就能"明天上手"
+- ✅ **G1**：交付一份**完整、可拷贝、可二次复用**的仓库 `TUVE_AI/`，把全公司"和 AI 协作"的红线 / 工作流 / 模板 / 案例都收进去；任何同事或合作伙伴拷一份回去就能"明天上手"
 - ✅ **G2**：交付一份**完整的两部分培训教材**（第一部分全员场 90 分钟 / 第二部分开发场 90 分钟），含开场 / 红线讲解 / 工作流走查 / 动手练习 / 现场演示 / Q&A，所有材料归档进 [`training/`](../../training/)
 - ✅ **G3**：交付一份**没有 AI 背景的人也能跑起来**的样例项目（[`projects/customer_brief_generator/`](../../projects/customer_brief_generator/)），实测在没有 API Key 的情况下也能跑（template-fill 模式），让现场任何工具的任何人都能复现
 - ✅ **G4**：交付**4 个主流 AI 工具**（Claude Code / Cursor / Codex / Trae）的入口文件，让听众用任意一个都能让 AI"自动认识这个仓库"
@@ -185,12 +185,12 @@ retention_reason: 本仓库的"为什么存在 / 给谁用 / 边界在哪"的根
 
 ## 9. 决策记录 / Decisions
 
-### 决策 9.1 - 2026-05-09：文件夹命名 `TUZHAN_AI`（不叫 `Demo`）
+### 决策 9.1 - 2026-05-09：文件夹命名 `TUVE_AI`（不叫 `Demo`）
 
 - **背景**：原始构想叫 `GOOD_USE_OF_AI`；但很多听众会**直接拿这个文件夹起新项目**，名字必须是"长期复用得起"的（红线 #9）
 - **选项**：
   - A. `Demo` / `GOOD_USE_OF_AI` / `AI_TRAINING` —— 一次性命名，听众改名成本高
-  - B. `TUZHAN_AI` —— 公司专有 + 一目了然 + 二次复用时全文搜替换公司名即可
+  - B. `TUVE_AI` —— 公司专有 + 一目了然 + 二次复用时全文搜替换公司名即可
   - C. `<Company>_Playbook` 模式 —— 通用但听众还是要改
 - **选择**：B
 - **理由**：
@@ -253,7 +253,7 @@ retention_reason: 本仓库的"为什么存在 / 给谁用 / 边界在哪"的根
 
 - 已读 PRD §1-§9（与产品负责人共同起草）
 - 澄清问题（已问 + 已答）：
-  - Q1：文件夹名应该叫什么？→ A：TUZHAN_AI（决策 9.1）
+  - Q1：文件夹名应该叫什么？→ A：TUVE_AI（决策 9.1）
   - Q2：培训分不分两份仓库？→ A：不分（决策 9.2）
   - Q3：现场演示用 PPT 还是 IDE？→ A：IDE（决策 9.3）
 - 实施路径草图：见 §10.1（Mermaid）

@@ -94,7 +94,7 @@ customer_brief_generator/
 
 ## 这个项目作为"教学样本" / This Project as Teaching Sample
 
-新人按下面顺序读这个项目，能看到 TUZHAN_AI 方法论怎么落地：
+新人按下面顺序读这个项目，能看到 TUVE_AI 方法论怎么落地：
 
 1. [`workspace_human/prd/PRD-0001_*.md`](workspace_human/prd/PRD-0001_customer_brief_generator.md) —— 一份完整的 PRD（含主次审视段）
 2. [`customer_brief_generator.py`](customer_brief_generator.py) —— 工程纪律（命名、文件长度、红线 #2 自查 hook）
