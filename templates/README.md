@@ -23,7 +23,7 @@
 ## 使用方法 / Usage
 
 1. 找到匹配你今天任务的模板
-2. 复制到目标位置（PRD 复制到 `workspace_human/prd/`，会议纪要到 `workspace_human/meetings/`，等等）
+2. 复制到目标位置（PRD 复制到 `workspace_human/prd/`，会议纪要到 `meetings/`，等等）
 3. 替换占位符（YYYY-MM-DD、`<name>`、`<...>`）
 4. 让 AI 帮你填——AI 看到模板会按结构生成
 5. 你审核 + 落字
@@ -39,7 +39,7 @@ If a recurring task lacks a template:
 2. 用一两次发现可以改进的点
 3. 改到 v1.0
 4. 在本 README 加一行
-5. 让团队知道（落到 [`workspace_human/meetings/`](../workspace_human/meetings/) 月度纪要）
+5. 让团队知道（落到 [`meetings/`](../meetings/) 月度纪要）
 
 让模板库**随团队演进**。
 Let the template library **evolve with the team**.

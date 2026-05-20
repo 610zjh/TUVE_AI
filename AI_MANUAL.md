@@ -85,7 +85,9 @@ TUVE_AI/
 │                                  其中 `products/tuve/openclaw_context/` 额外收录 TUVE 的运行时上下文包
 ├── handoffs/                    ← 日常工作传递区（inbox / outbox，AI 可写）
 │                                  Daily handoff zone (inbox / outbox, AI-writable)
-├── workspace_human/             ← 人写的 PRD 和会议纪要（AI 只读）
+├── meetings/                    ← 会议纪要、ADR、复盘、研究沉淀（AI 可协助）
+│                                  Meeting notes, ADRs, retros, research writeups (AI-assisted)
+├── workspace_human/             ← 人写的 PRD 与受保护原始资料（AI 只读）
 ├── issues/                      ← 全公司 Bug/问题单一登记本
 ├── runbooks/                    ← 部署 / 客户接入 / 销售交接 等操作手册
 ├── projects/                    ← 实际项目（含一个完整可跑的样例）
@@ -217,5 +219,5 @@ This manual is not "shackles for the AI" — it is the **collaboration contract*
 规矩多看起来死板，但每一条都是从过去的真实失败里换来的。新失败可以发生，旧失败不应该再发生。
 The rules look heavy, but each one was paid for with a real past failure. New failures may happen; old failures should not happen twice.
 
-如果你（人）发现某条规矩在你的真实工作里其实是阻力大于价值的——把它拿出来在 [`workspace_human/meetings/`](workspace_human/meetings/) 开一个讨论。规矩本身也要随业务进化。
-If you (the human) find a rule whose friction outweighs its value in your real work — open a discussion in [`workspace_human/meetings/`](workspace_human/meetings/). The rules evolve with the business too.
+如果你（人）发现某条规矩在你的真实工作里其实是阻力大于价值的——把它拿出来在 [`meetings/`](meetings/) 开一个讨论。规矩本身也要随业务进化。
+If you (the human) find a rule whose friction outweighs its value in your real work — open a discussion in [`meetings/`](meetings/). The rules evolve with the business too.

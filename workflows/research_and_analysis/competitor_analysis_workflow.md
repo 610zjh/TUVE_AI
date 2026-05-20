@@ -105,8 +105,8 @@ Public sources:
 | 每季度 / Quarterly | 产品负责人主导 | 完整竞品报告（5 维度深挖 + 3 个月行动） |
 | 重大事件 / Major events | 即时（如对手大型产品发布、融资）| 应急响应（24 小时内出对策） |
 
-存到 [`workspace_human/meetings/competitor/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/competitor/`.
+存到 [`meetings/competitor/`](../../meetings/) 下。
+Save under `meetings/competitor/`.
 
 retention class = `permanent`（公司战略素材）/ permanent (company strategy material).
 

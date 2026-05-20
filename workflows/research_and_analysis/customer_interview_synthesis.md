@@ -72,8 +72,8 @@
 - 问：... / 答：...
 ```
 
-存到 [`workspace_human/meetings/customer_interviews/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/customer_interviews/`.
+存到 [`meetings/customer_interviews/`](../../meetings/) 下。
+Save under `meetings/customer_interviews/`.
 
 ### 步 2：用 AI 帮你提取主题 / Step 2: AI-Assisted Theme Extraction
 

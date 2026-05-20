@@ -1,7 +1,7 @@
 # 会议纪要 / Meeting Notes — <主题 / Topic>
 
-> 复制这份模板，存到 `workspace_human/meetings/YYYY-MM-DD_<topic>.md`。
-> Copy this template, save to `workspace_human/meetings/YYYY-MM-DD_<topic>.md`.
+> 复制这份模板，存到 `meetings/YYYY-MM-DD_<topic>.md`。
+> Copy this template, save to `meetings/YYYY-MM-DD_<topic>.md`.
 
 - **时间 / Date**: 2026-XX-XX HH:MM
 - **时长 / Duration**: N 分钟

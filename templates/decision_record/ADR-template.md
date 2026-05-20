@@ -1,7 +1,7 @@
 # ADR-NNNN: <一句话标题，含动词 / one-line title with verb>
 
-> 复制这份模板，存到 `workspace_human/meetings/adr/ADR-NNNN_短标题.md`。
-> Copy this template, save to `workspace_human/meetings/adr/ADR-NNNN_short_title.md`.
+> 复制这份模板，存到 `meetings/adr/ADR-NNNN_短标题.md`。
+> Copy this template, save to `meetings/adr/ADR-NNNN_short_title.md`.
 
 - **时间 / Date**: 2026-XX-XX
 - **决策人 / Decided by**: <具体姓名，不许写"我们"/"团队">

@@ -55,7 +55,7 @@ In Q4-2025 customer interviews (10 customers), 3 recurring feedback themes surfa
 
 1. [`customer_interview_synthesis.md`](../../workflows/research_and_analysis/customer_interview_synthesis.md) — 多份访谈合并分析
 2. 提炼出 3 个高共识主题 + 2 个假设 → 进入 PRD 起草
-3. 在 [`workspace_human/meetings/customer_interviews/`](../../workspace_human/meetings/) 存了完整的 10 份访谈纪要（脱敏）
+3. 在 [`meetings/customer_interviews/`](../../meetings/) 存了完整的 10 份访谈纪要（脱敏）
 
 ---
 

@@ -39,7 +39,7 @@ inbox/
 ## 处理完之后
 
 - 已被下游消化 → 进入 30 天反熵窗口（[../README.md](../README.md)）
-- 已成型为可复用资料 → 挪到 `templates/` / `runbooks/` / `case_studies/` / `workspace_human/meetings/`
+- 已成型为可复用资料 → 挪到 `templates/` / `runbooks/` / `case_studies/` / `meetings/`
 - 已过时 → `git rm`
 
 详见 [`workflows/operations/handing_off_work.md`](../../workflows/operations/handing_off_work.md)。

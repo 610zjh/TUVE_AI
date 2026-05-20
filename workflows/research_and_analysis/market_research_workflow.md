@@ -92,8 +92,8 @@ By priority:
 - 如果我们的核心假设 Z 错了，结论会变成什么？
 ```
 
-存到 [`workspace_human/meetings/research/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/research/`.
+存到 [`meetings/research/`](../../meetings/) 下。
+Save under `meetings/research/`.
 
 ---
 

@@ -11,7 +11,7 @@
 | 销售当天给运营的客户需求要点 | 项目级接力（接力棒）→ [`projects/`](../projects/) + 对应 PRD |
 | 运营给视频组的本周拍摄要点 | 岗位交接（离职 / 调岗）→ 走专门流程（未来 PRD） |
 | 算法给产品的 A/B 实验初步分析 | 客户合同 / 报价 / 法务回执 → 走签批流程，**不进 git** |
-| 某个临时小任务的中间产物 | 客户电话**纪要** → [`workspace_human/meetings/customer_followups/`](../workspace_human/meetings/customer_followups/) |
+| 某个临时小任务的中间产物 | 客户电话**纪要** → [`meetings/customer_followups/`](../meetings/customer_followups/) |
 | 不值得开 PRD、但要让同事看到的东西 | 长期复用资料 → [`runbooks/`](../runbooks/) / [`templates/`](../templates/) / [`training/`](../training/) |
 |  | Bug / 工艺问题 → [`issues/known.md`](../issues/known.md)（红线 #4 SSOT）|
 
@@ -50,7 +50,7 @@ YYYY-MM-DD_<from-or-to>_<topic>.md
 进入 inbox/ 或 outbox/ 顶层超过 30 天没改过的文件，自动列入下一次周复盘的"清理候选"。4 选 1：
 
 1. 仍在用 → 留下
-2. 已成熟为长期资料 → 挪到对应区域（runbooks / templates / case_studies / workspace_human/meetings）
+2. 已成熟为长期资料 → 挪到对应区域（runbooks / templates / case_studies / meetings）
 3. 已过时 → `git rm`
 4. 有归档价值但不需常态可见 → 挪到 `archive/`（如开则提 COMPACT 提案）
 

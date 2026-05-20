@@ -79,7 +79,7 @@ Template at [`templates/decision_record/`](../../templates/decision_record/).
 
 - 全公司**统一连续编号**，不分部门 / Company-wide single sequence, no per-team numbering
 - 编号一旦分配不复用，即使 ADR 被废弃 / Numbers never reused, even if ADR is deprecated
-- 文件名格式：`ADR-NNNN_短标题.md`，存在 [`workspace_human/meetings/`](../../workspace_human/meetings/) 下 / File name `ADR-NNNN_short_title.md` under [`workspace_human/meetings/`](../../workspace_human/meetings/)
+- 文件名格式：`ADR-NNNN_短标题.md`，存在 [`meetings/`](../../meetings/) 下 / File name `ADR-NNNN_short_title.md` under [`meetings/`](../../meetings/)
 
 ---
 

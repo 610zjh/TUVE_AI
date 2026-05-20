@@ -49,5 +49,5 @@
 
 ## 还是卡？/ Still Stuck?
 
-→ 找你的团队 lead 或仓库主理人；或在 [`workspace_human/meetings/`](../../workspace_human/meetings/) 起一份"自学反馈"，让仓库随真实使用进化。
-→ Find your team lead or repo owner; or open a "self-study feedback" note in [`workspace_human/meetings/`](../../workspace_human/meetings/) so the repo evolves with real usage.
+→ 找你的团队 lead 或仓库主理人；或在 [`meetings/`](../../meetings/) 起一份"自学反馈"，让仓库随真实使用进化。
+→ Find your team lead or repo owner; or open a "self-study feedback" note in [`meetings/`](../../meetings/) so the repo evolves with real usage.

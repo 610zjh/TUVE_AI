@@ -132,7 +132,7 @@ Real people appearing / mentioned in videos must:
   Have written consent
 - ✅ 同意范围清晰（在哪些平台用、用多久、能不能再剪辑）
   Consent scope clear (which platforms, how long, re-edit OK?)
-- ✅ 同意书存到 [`workspace_human/meetings/`](../../workspace_human/meetings/) 下
+- ✅ 同意书存到 [`meetings/`](../../meetings/) 下
   Consents archived
 
 未授权的客户 logo / 真实街景里的路人 / 未授权的音乐 → 都是法律风险。

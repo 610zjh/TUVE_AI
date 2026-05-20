@@ -31,7 +31,7 @@ retention_reason: 跨职能通用工作流，长期复用 / Universal cross-func
 - 周五：...
 ```
 
-如果记不全，去 [`issues/known.md`](../../issues/known.md)、[`issues/fixed/`](../../issues/fixed/)、[`workspace_human/meetings/`](../../workspace_human/meetings/)、git log、邮件 / Slack 记录捞。
+如果记不全，去 [`issues/known.md`](../../issues/known.md)、[`issues/fixed/`](../../issues/fixed/)、[`meetings/`](../../meetings/)、git log、邮件 / Slack 记录捞。
 If you can't recall, scan your trackers, git log, email, Slack history.
 
 ### 步 2：用 AI 帮你分类（5 分钟）/ Step 2: AI Classification (5 min)
@@ -135,7 +135,7 @@ Cross-function dependencies decided **on the spot**, not "let's chat after".
 
 ### 步 4.5：handoffs/ 30 天反熵扫（3 分钟）/ Step 4.5: handoffs/ 30-Day Sweep (3 min)
 
-扫一次 [`../../handoffs/inbox/`](../../handoffs/inbox/) 与 [`../../handoffs/outbox/`](../../handoffs/outbox/) 顶层文件 mtime ≥ 30 天的，逐个 4 选 1：留 / 挪（→ runbooks / templates / case_studies / workspace_human/meetings）/ 删（git rm）/ 归档（archive/，开 COMPACT 提案）。
+扫一次 [`../../handoffs/inbox/`](../../handoffs/inbox/) 与 [`../../handoffs/outbox/`](../../handoffs/outbox/) 顶层文件 mtime ≥ 30 天的，逐个 4 选 1：留 / 挪（→ runbooks / templates / case_studies / meetings）/ 删（git rm）/ 归档（archive/，开 COMPACT 提案）。
 
 AI 不允许自动执行清理，只列候选。详见 [`../../handoffs/README.md`](../../handoffs/README.md)。
 
@@ -173,8 +173,8 @@ Last week of each month, aggregate 4 weekly reviews.
 - 数字 / 客户名 / 内部代号按红线 #2 处理
 ```
 
-月度复盘存到 [`workspace_human/meetings/monthly/`](../../workspace_human/meetings/) 下，按月归档。
-Save under `workspace_human/meetings/monthly/`, archived monthly.
+月度复盘存到 [`meetings/monthly/`](../../meetings/) 下，按月归档。
+Save under `meetings/monthly/`, archived monthly.
 
 retention class = `rollup`（每年底归一份年度汇总）。
 retention class = `rollup` (annual rollup at year-end).

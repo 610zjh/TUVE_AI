@@ -168,8 +168,8 @@ meeting 结束后先问 4 个问题：
 
 ### 步 4：发送 / Step 4: Distribute
 
-24 小时内发到所有参会者。同步存到 [`workspace_human/meetings/YYYY-MM-DD_<topic>.md`](../../workspace_human/meetings/)。
-Within 24h to all attendees. Save to `workspace_human/meetings/YYYY-MM-DD_<topic>.md`.
+24 小时内发到所有参会者。同步存到 [`meetings/YYYY-MM-DD_<topic>.md`](../../meetings/)。
+Within 24h to all attendees. Save to `meetings/YYYY-MM-DD_<topic>.md`.
 
 如果 meeting 已经把需求挖清，下一步才是去 [`writing_a_prd.md`](writing_a_prd.md)。
 If the meeting has clarified the requirement enough, only then move to [`writing_a_prd.md`](writing_a_prd.md).
@@ -259,6 +259,6 @@ TUZHAN is multinational; some meetings span CN+EN.
 - [ ] AI 起草纪要
 - [ ] 人审纪要
 - [ ] 发到所有参会者
-- [ ] 存到 `workspace_human/meetings/`
+- [ ] 存到 `meetings/`
 - [ ] 判断是否已满足进入 PRD 的条件
 - [ ] 非平凡决策 → 起 ADR

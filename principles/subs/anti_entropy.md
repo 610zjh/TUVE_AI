@@ -162,8 +162,8 @@ Default by directory (overridable by file frontmatter):
 | `principles/` | permanent | 公司宪法 |
 | `workspace_human/prd/` | permanent | 已落地的 PRD |
 | `workspace_human/prd/compaction/` | permanent | COMPACT 提案的历史 |
-| `workspace_human/meetings/` | permanent | ADR、复盘 |
-| `workspace_human/meetings/weekly/` | rollup | 每月底归一份月度汇总 |
+| `meetings/` | permanent | ADR、复盘 |
+| `meetings/weekly/` | rollup | 每月底归一份月度汇总 |
 | `issues/known.md` | permanent | 文件本身永久；条目移走 |
 | `issues/fixed/` | rollup | 每年底归一份年度汇总，原始日文件保留索引 |
 | `runbooks/` | permanent | 操作手册 |

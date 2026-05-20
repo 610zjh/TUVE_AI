@@ -114,7 +114,7 @@ git log --oneline production-tag~5..production-tag
 
 ## 复盘
 
-回滚后 24 小时内**必须**写复盘到 [`workspace_human/meetings/`](../workspace_human/meetings/)。
+回滚后 24 小时内**必须**写复盘到 [`meetings/`](../meetings/)。
 内容：时间线 / 根因 / 行动项。
 
 参考 [`principles/subs/deployment_and_ops.md`](../principles/subs/deployment_and_ops.md) §"复盘"。

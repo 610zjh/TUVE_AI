@@ -201,5 +201,5 @@ Once per quarter, walk through all of [`issues/fixed/`](../../issues/fixed/) for
 3. **预警漏报**：哪些 Bug 是客户先发现的而不是我们自己 / 监控发现的？/ Detection gap — which bugs surfaced via customer first, not internally?
 4. **新增模式**：是不是有新的一类 Bug 反复出现，需要从根子上立一条新的红线 / 流程？/ New patterns — is a new bug class recurring, suggesting a new red line / process?
 
-复盘结论写进 [`workspace_human/meetings/`](../../workspace_human/meetings/) 当 ADR。
-Review conclusions go into [`workspace_human/meetings/`](../../workspace_human/meetings/) as ADRs.
+复盘结论写进 [`meetings/`](../../meetings/) 当 ADR。
+Review conclusions go into [`meetings/`](../../meetings/) as ADRs.

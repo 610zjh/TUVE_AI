@@ -42,7 +42,7 @@ retention_reason: 销售/客户成功交接的标准流程
 - 销售过程中**未承诺但客户表达过期望**的内容
 - 客户的"红色按钮"（什么会让他不爽 / 流失）
 
-存到 [`workspace_human/meetings/customer_followups/`](../workspace_human/meetings/) 下。
+存到 [`meetings/customer_followups/`](../meetings/) 下。
 
 ### 2. 三方交接会（48 小时内）
 
@@ -67,7 +67,7 @@ retention_reason: 销售/客户成功交接的标准流程
 
 客户成功 owner 在 30 天内：
 - 确保客户成功上手（按客户成功的标准 onboarding 节奏）
-- 提交一份"30 天 health check" 到 [`workspace_human/meetings/customer_followups/`](../workspace_human/meetings/)
+- 提交一份"30 天 health check" 到 [`meetings/customer_followups/`](../meetings/)
 - 如有红色信号（客户没用 / 投诉 / 决策链变了），立刻拉销售 + 客户成功 lead 三方对齐
 
 ---

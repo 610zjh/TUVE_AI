@@ -141,7 +141,7 @@ When customer asks "do you use AI on our data", unified answer:
 5. **判断是否要通知客户**：
    - 涉及 PII / 合同条款 → **必须**通知客户 / Involves PII / contract terms → **must** notify customer
    - 仅涉及业务数据但脱敏不充分 → 由合规和法务决定 / Business data with insufficient redaction → compliance and legal decide
-6. **写事故报告到 [`workspace_human/meetings/`](../../workspace_human/meetings/)**——影响范围、根因、行动项 / File incident report — impact, root cause, action items
+6. **写事故报告到 [`meetings/`](../../meetings/)**——影响范围、根因、行动项 / File incident report — impact, root cause, action items
 
 **禁止**：
 **Forbidden**:

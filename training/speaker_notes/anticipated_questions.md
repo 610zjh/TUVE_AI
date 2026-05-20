@@ -110,7 +110,7 @@ retention_reason: 演讲者必备 FAQ
 
 ### Q14: 客户访谈纪要存哪？
 
-**A**: [`workspace_human/meetings/customer_interviews/YYYY-MM-DD_<customer_label>.md`](../../workspace_human/meetings/)，客户名按红线 #3 脱敏。
+**A**: [`meetings/customer_interviews/YYYY-MM-DD_<customer_label>.md`](../../meetings/)，客户名按红线 #3 脱敏。
 
 ---
 

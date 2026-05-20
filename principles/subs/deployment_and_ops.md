@@ -238,5 +238,5 @@ Why 5: ...
 复盘**不追究个人**，追究**系统**。"是某某错"的复盘是失败的复盘——下次同样情况换个人也会同样错。
 Post-mortems target **systems**, not **individuals**. "It was X's fault" is a failed post-mortem — next time someone else would make the same mistake under the same system.
 
-复盘存进 [`workspace_human/meetings/`](../../workspace_human/meetings/)。
-Post-mortems live in [`workspace_human/meetings/`](../../workspace_human/meetings/).
+复盘存进 [`meetings/`](../../meetings/)。
+Post-mortems live in [`meetings/`](../../meetings/).

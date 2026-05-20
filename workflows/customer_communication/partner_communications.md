@@ -64,8 +64,8 @@ Partners expect more "professionalism / process / written records" than customer
 ## 下次同步：YYYY-MM-DD HH:MM
 ```
 
-存到 [`workspace_human/meetings/partner/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/partner/`.
+存到 [`meetings/partner/`](../../meetings/) 下。
+Save under `meetings/partner/`.
 
 ---
 
@@ -138,8 +138,8 @@ Exceptions: NDA signed + classified info-sharing agreed.
 
 ### 红线 #6：合作伙伴决策落字成 ADR
 
-任何"非平凡"合作决策（年度合作合同、收入分成调整、终止合作）都要落字成 ADR 存到 [`workspace_human/meetings/`](../../workspace_human/meetings/)。
-Any non-trivial partner decision (annual contract, revenue split, termination) → ADR in `workspace_human/meetings/`.
+任何"非平凡"合作决策（年度合作合同、收入分成调整、终止合作）都要落字成 ADR 存到 [`meetings/`](../../meetings/)。
+Any non-trivial partner decision (annual contract, revenue split, termination) → ADR in `meetings/`.
 
 ### 红线 #8：发送任何对外文档前必须人确认
 

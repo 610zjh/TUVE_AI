@@ -118,8 +118,8 @@ Short-video is one of TUZHAN's core outputs. Beyond the rules above, add:
 
 1. **不剧透产品具体能力之外的"我们正在做"承诺**——视频在网上的留存时间远超你的预期。
    **Don't promise "we're working on X"** beyond shipped capabilities — videos persist online longer than you expect.
-2. **同一支视频里出现的真实人物（员工 / 客户）必须有授权**。授权落字到 [`workspace_human/meetings/`](../../workspace_human/meetings/)。
-   **Real persons (employees, customers) appearing in a video must have written authorization** in [`workspace_human/meetings/`](../../workspace_human/meetings/).
+2. **同一支视频里出现的真实人物（员工 / 客户）必须有授权**。授权落字到 [`meetings/`](../../meetings/)。
+   **Real persons (employees, customers) appearing in a video must have written authorization** in [`meetings/`](../../meetings/).
 3. **数据呈现要保留可追溯性**——用了"提升 47%"的话，背后的统计口径写在拍摄笔记里，方便日后被问到能调出。
    **Numbers must remain traceable** — "47% improvement" → record the methodology in shooting notes for future questioning.
 4. **不要把还在 A/B 测试的素材拿去公开发布**——A/B 数据可能反向，先发后撤回比不发更损形象。

@@ -152,8 +152,8 @@ If you (the human) feel a specific red line contradicts long-term thinking — g
 - 业界标准：业界标杆里有几家在用？头部公司用什么？
 - 核心目标：用了它能解决我们今年要解决的问题吗？还是只是显得"先进"？
 
-得出结论的形式：写一份 ADR 落字到 [`workspace_human/meetings/`](../../workspace_human/meetings/)。哪怕结论是"暂不引入"，也写下来——这样下次有人重提，就不必从零讨论。
-Output an ADR into [`workspace_human/meetings/`](../../workspace_human/meetings/). Even if the conclusion is "defer", write it — so next time someone re-raises, you point at the ADR instead of re-debating from scratch.
+得出结论的形式：写一份 ADR 落字到 [`meetings/`](../../meetings/)。哪怕结论是"暂不引入"，也写下来——这样下次有人重提，就不必从零讨论。
+Output an ADR into [`meetings/`](../../meetings/). Even if the conclusion is "defer", write it — so next time someone re-raises, you point at the ADR instead of re-debating from scratch.
 
 ---
 

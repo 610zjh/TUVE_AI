@@ -118,8 +118,8 @@ Every code change must map to a PRD in [`workspace_human/prd/`](../workspace_hum
 详见 [`subs/prd_and_requirements.md`](subs/prd_and_requirements.md).
 
 ### #6 · 决策落字 / Decisions Get Written Down
-任何**非平凡决策**（影响其他人 / 涉及取舍 / 后续可能被追问"为什么这么做"）必须落成 ADR（Architecture Decision Record）放进 [`workspace_human/meetings/`](../workspace_human/meetings/) 或对应 PRD 的"决策"段。
-Any **non-trivial decision** (affects others / involves tradeoffs / could later be questioned "why this way") must be written as an ADR into [`workspace_human/meetings/`](../workspace_human/meetings/) or the relevant PRD's "Decisions" section.
+任何**非平凡决策**（影响其他人 / 涉及取舍 / 后续可能被追问"为什么这么做"）必须落成 ADR（Architecture Decision Record）放进 [`meetings/`](../meetings/) 或对应 PRD 的"决策"段。
+Any **non-trivial decision** (affects others / involves tradeoffs / could later be questioned "why this way") must be written as an ADR into [`meetings/`](../meetings/) or the relevant PRD's "Decisions" section.
 
 口头共识、Slack 消息、会议白板，统统不算落字。
 Verbal consensus, Slack messages, whiteboards — none count as written.
@@ -183,8 +183,8 @@ retention_reason: <一句话说明为什么是这一类 / one-line reason>
 详见 [`subs/anti_entropy.md`](subs/anti_entropy.md).
 
 ### #12 · `workspace_human/` 是 AI 只读区 / `workspace_human/` is AI Read-Only
-[`workspace_human/`](../workspace_human/) 下的内容（人写的 PRD、会议纪要、客户案例复盘）**AI 严禁修改**。
-Contents under [`workspace_human/`](../workspace_human/) (human-written PRDs, meeting notes, customer case reviews) **are off-limits to AI edits**.
+[`workspace_human/`](../workspace_human/) 下的内容（人写的 PRD 与其他受保护原始资料）**AI 严禁修改**。
+Contents under [`workspace_human/`](../workspace_human/) (human-written PRDs and other protected source materials) **are off-limits to AI edits**.
 
 例外：人**显式说**"在这份 PRD 末尾加一段实施记录"——这种命名了具体动作和位置的授权才算授权。
 Exception: a **specific** human authorization like "append an implementation log at the bottom of this PRD" — generic permissions don't count.
@@ -222,7 +222,7 @@ When the user reports "production / test server / X is down / 500 / error", AI's
 Each red line was paid for with a real past failure. **New failures may happen; old failures should not happen twice.**
 
 新增红线的流程 / Adding a new red line:
-1. 在 [`workspace_human/meetings/`](../workspace_human/meetings/) 开一份决议讨论稿，把"事故 / 教训 / 拟立的红线 / 影响范围"写清楚 / Open a decision discussion in [`workspace_human/meetings/`](../workspace_human/meetings/) — incident, lesson, proposed rule, scope
+1. 在 [`meetings/`](../meetings/) 开一份决议讨论稿，把"事故 / 教训 / 拟立的红线 / 影响范围"写清楚 / Open a decision discussion in [`meetings/`](../meetings/) — incident, lesson, proposed rule, scope
 2. 经主理人同意 / Owner approval
 3. 加进本文件 + 同步更新 `AI_MANUAL.md` 第 1 节红线表 / Add here + sync into `AI_MANUAL.md` §1
 4. 一周内通报全员 / Announce to the team within a week

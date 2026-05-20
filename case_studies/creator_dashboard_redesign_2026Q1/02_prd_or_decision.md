@@ -26,7 +26,7 @@ PRD-0042: 创作者后台首页改版 v1
 
 ## §1 背景与动机（节选）/ §1 Context (excerpt)
 
-> 我们 2025 Q4 完成了 10 位客户访谈（详见 [`workspace_human/meetings/customer_interviews/2025_Q4_round/`](../../workspace_human/meetings/)）。汇总出 3 个高共识主题：
+> 我们 2025 Q4 完成了 10 位客户访谈（详见 [`meetings/customer_interviews/2025_Q4_round/`](../../meetings/)）。汇总出 3 个高共识主题：
 >
 > 1. 客户每周开工第一件事是看后台，但要切 5 个模块才能拿到"本周怎么样"的全貌，单次耗时 ~1 小时。
 > 2. 核心数据 vs 深度看板使用频率差异大（核心 daily, 深度 weekly）。

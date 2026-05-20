@@ -33,8 +33,8 @@
 （团队当周最大的体感，1 句话）
 ```
 
-存到 [`workspace_human/meetings/weekly_ops/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/weekly_ops/`.
+存到 [`meetings/weekly_ops/`](../../meetings/) 下。
+Save under `meetings/weekly_ops/`.
 
 retention class = `rollup`（每月底归月度汇总）/ rollup (monthly aggregate at end of month)。
 

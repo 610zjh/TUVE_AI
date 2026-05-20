@@ -1,7 +1,7 @@
 # 客户电话 / 拜访 跟进 / Sales Call Followup
 
-> 电话结束后 24 小时内填写。存到 `workspace_human/meetings/customer_followups/YYYY-MM-DD_<customer_label>.md`。
-> Fill within 24h after the call. Save to `workspace_human/meetings/customer_followups/`.
+> 电话结束后 24 小时内填写。存到 `meetings/customer_followups/YYYY-MM-DD_<customer_label>.md`。
+> Fill within 24h after the call. Save to `meetings/customer_followups/`.
 
 - **客户 / Customer**: <脱敏标签，如"客户 A，教育-中型"——内部存档可用真名>
 - **对接人 / POC**: <角色，如"CTO" / "运营负责人">

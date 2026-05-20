@@ -34,7 +34,7 @@ retention_reason: 让培训持续进化
 
 **回应方式**：
 - 整理出 top 5 共性主题
-- 贴到 [`workspace_human/meetings/`](../../workspace_human/meetings/) 当成"培训复盘"
+- 贴到 [`meetings/`](../../meetings/) 当成"培训复盘"
 - 用来调整下次培训的重点
 
 ### 3. 自学过程中的反馈 / Self-Study Feedback
@@ -43,7 +43,7 @@ retention_reason: 让培训持续进化
 
 **收集方式**：
 - 在 [`AI_MANUAL.md`](../../AI_MANUAL.md) 末尾留一个"反馈给我们"的指引
-- 邀请同事在 [`workspace_human/meetings/`](../../workspace_human/meetings/) 起反馈纪要
+- 邀请同事在 [`meetings/`](../../meetings/) 起反馈纪要
 
 ### 4. "我用了之后发现 X 段不对 / 不清楚" 反馈 / "I Used It and Found X Wrong/Unclear" Feedback
 
@@ -57,7 +57,7 @@ retention_reason: 让培训持续进化
 
 ## 培训复盘模板 / Training Retrospective Template
 
-培训结束后 1 周内，演讲者写一份复盘到 [`workspace_human/meetings/training_retro_YYYY-MM-DD.md`](../../workspace_human/meetings/):
+培训结束后 1 周内，演讲者写一份复盘到 [`meetings/training_retro_YYYY-MM-DD.md`](../../meetings/):
 
 ```markdown
 # 培训复盘：YYYY-MM-DD《如何高效用 AI 完成工作》
@@ -130,7 +130,7 @@ retention_reason: 让培训持续进化
 
 ### 选项 B：协作文档
 
-在仓库的 [`workspace_human/meetings/training_feedback/`](../../workspace_human/meetings/) 下开一份共享文档，邀请参与者填。
+在仓库的 [`meetings/training_feedback/`](../../meetings/) 下开一份共享文档，邀请参与者填。
 
 ### 选项 C：物理白板
 
@@ -148,7 +148,7 @@ retention_reason: 让培训持续进化
 
 收集完不等于结束。每月一次：
 
-1. 查看 [`workspace_human/meetings/training_feedback/`](../../workspace_human/meetings/) 下的反馈
+1. 查看 [`meetings/training_feedback/`](../../meetings/) 下的反馈
 2. 分类：(a) 培训内容改进 (b) 仓库内容改进 (c) 全新缺口
 3. 起对应 PRD / ADR
 4. 实施

@@ -46,4 +46,4 @@ I want you to: 1) draft a sketch, 2) list unknowns (no guessing), 3) flag whenev
 
 1. **不要把"未脱敏的真实客户名 / 合同金额 / 真实手机号 / 内部代号"贴给 AI**——红线 #3。
 2. **不要让 AI 在客户面文案里写内部 PRD 编号 / 模型 ID / 内部岗位代号**——红线 #2。
-3. **不要让 AI 直接改 [`workspace_human/`](../../workspace_human/) 下的任何文件**——红线 #12，那是人写的 PRD 和会议纪要的只读区。
+3. **不要让 AI 直接改 [`workspace_human/`](../../workspace_human/) 下的任何文件**——红线 #12，那是人写 PRD 和受保护原始资料的只读区。

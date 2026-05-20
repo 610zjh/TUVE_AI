@@ -25,5 +25,5 @@
 模板见 [`templates/decision_record/`](../../templates/decision_record/)。
 Template at [`templates/decision_record/`](../../templates/decision_record/).
 
-存放在 [`workspace_human/meetings/adr/`](../../workspace_human/meetings/) 下。
-Storage: [`workspace_human/meetings/adr/`](../../workspace_human/meetings/).
+存放在 [`meetings/adr/`](../../meetings/) 下。
+Storage: [`meetings/adr/`](../../meetings/).

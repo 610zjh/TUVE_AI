@@ -89,8 +89,8 @@ Digitize. Objective minutes first; no judgment yet.
 不会发给客户，仅内部用。可以用具体客户名 / 内部代号。
 ```
 
-存到 [`workspace_human/meetings/customer_followups/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/customer_followups/`.
+存到 [`meetings/customer_followups/`](../../meetings/) 下。
+Save under `meetings/customer_followups/`.
 
 #### 输出 C：CRM / 客户管理系统的更新 / Output C: CRM Update
 

@@ -182,8 +182,8 @@ Quarterly, scan all `issues/fixed/` entries:
 3. **预警漏报**：哪些 Bug 是客户先发现的而不是监控？/ Detection gap
 4. **新增模式**：是不是有新一类 Bug 反复出现？/ New patterns
 
-复盘结论存到 [`workspace_human/meetings/`](../../workspace_human/meetings/) 当 ADR。
-Conclusions → ADR in `workspace_human/meetings/`.
+复盘结论存到 [`meetings/`](../../meetings/) 当 ADR。
+Conclusions → ADR in `meetings/`.
 
 ---
 

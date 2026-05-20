@@ -40,8 +40,8 @@ retention_reason: 定义全公司"日常工作交接"的根目录与纪律；任
 
 | 现有位置 / Existing | 装的东西 / Holds | 跟"日常传递"的差距 / Gap |
 |---|---|---|
-| [`workspace_human/meetings/customer_followups/`](../meetings/customer_followups/) | 客户电话**纪要**（结构化、定型）/ Customer call **notes** (structured) | 不是"原始资料容器"，是已加工纪要 / Not a raw-material container |
-| [`workspace_human/meetings/`](../meetings/) | 各种会议纪要、ADR、客户访谈 / Meeting notes, ADRs, interviews | "纪要"语义不收"我手头一份过路材料" / "Notes" doesn't fit "passing material in transit" |
+| [`meetings/customer_followups/`](../meetings/customer_followups/) | 客户电话**纪要**（结构化、定型）/ Customer call **notes** (structured) | 不是"原始资料容器"，是已加工纪要 / Not a raw-material container |
+| [`meetings/`](../meetings/) | 各种会议纪要、ADR、客户访谈 / Meeting notes, ADRs, interviews | "纪要"语义不收"我手头一份过路材料" / "Notes" doesn't fit "passing material in transit" |
 | [`templates/customer_brief/`](../../templates/customer_brief/) 等 | 模板（拿去填的）/ Templates (to be filled) | 不是已填好的成品 / Not finished output |
 | [`runbooks/`](../../runbooks/) | 长期复用的操作手册 / Long-term reusable runbooks | 不是个人/小组临时工件 / Not personal/team transient artifacts |
 | [`case_studies/`](../../case_studies/) | 跨职能完整案例 / Complete cross-functional cases | 是**完成后**复盘归档，不是**进行中**传递 / Post-mortem archive, not in-flight transit |
@@ -63,7 +63,7 @@ handoffs/ 是**轻量交接**，**不是**：
 - 项目级接力棒（一个项目交给下一棒）→ 走对应项目目录
 - 岗位级离职交接（人员变动时打包未完成事项）→ 走专门的离职/调岗流程（未来另立 PRD）
 - 对客户的合同 / 报价 / 法务回执 → 走签批流程（不进 git）
-- 客户电话纪要的结构化版本 → 仍走 [`workspace_human/meetings/customer_followups/`](../meetings/customer_followups/)
+- 客户电话纪要的结构化版本 → 仍走 [`meetings/customer_followups/`](../meetings/customer_followups/)
 - 长期复用的操作手册 → 走 [`runbooks/`](../../runbooks/)
 
 混进任何上述类型 = 范围漂移，违反本 PRD §2 非目标。
@@ -107,7 +107,7 @@ handoffs/ 是**轻量交接**，**不是**：
 - ❌ **NG2 · 岗位级交接**：人员变动（离职 / 调岗 / 接班）的工作打包**不进**本目录，未来另起 `PRD-XXXX_role_transition` 处理
 - ❌ **NG3 · 客户合同 / 法务 / 财务**：合同、报价、回执、签字材料**不进**本目录、**不进** git，走签批流程
 - ❌ **NG4 · 创建新模板**：不新建 templates/handoff_xxx/ 这类目录；现有 templates/ 已经覆盖大多数成品形态，缺什么是另一份 template-PRD 的事
-- ❌ **NG5 · 替代客户电话纪要**：[`workspace_human/meetings/customer_followups/`](../meetings/customer_followups/) 继续是客户电话纪要的家，handoffs/ 不重叠
+- ❌ **NG5 · 替代客户电话纪要**：[`meetings/customer_followups/`](../meetings/customer_followups/) 继续是客户电话纪要的家，handoffs/ 不重叠
 - ❌ **NG6 · 长期复用资料**：长期会被反复拿出来用的东西（操作手册 / 培训材料 / 案例）**不进**本目录，到了那个状态应该挪到 [`runbooks/`](../../runbooks/) / [`training/`](../../training/) / [`case_studies/`](../../case_studies/)
 - ❌ **NG7 · 替代 issues/**：Bug / 问题登记本是单一登记本（红线 #4），仍是 [`issues/known.md`](../../issues/known.md)，handoffs/ 不接 Bug
 - ❌ **NG8 · 自动化 / 工具**：本 PRD 不交付 pre-commit hook / GitHub Action / 邮件机器人；纯纪律 + 目录结构。自动化是后续可选 PRD（看人肉纪律是否够用决定）
@@ -195,7 +195,7 @@ YYYY-MM-DD_<from-or-to>_<topic>.md
 - **30 天约定**：进入 inbox/ 或 outbox/ 顶层超过 30 天没被改过的文件，自动列入下一次周复盘的"清理候选"
 - **清理动作有 4 种**：
   1. 仍在用 → 留下（不动）
-  2. 已成熟为长期资料 → 挪到对应区域（[`runbooks/`](../../runbooks/) / [`templates/`](../../templates/) / [`case_studies/`](../../case_studies/) / [`workspace_human/meetings/`](../meetings/)）
+  2. 已成熟为长期资料 → 挪到对应区域（[`runbooks/`](../../runbooks/) / [`templates/`](../../templates/) / [`case_studies/`](../../case_studies/) / [`meetings/`](../meetings/)）
   3. 已过时无用 → 删除（git rm）
   4. 含历史价值但不需要常态可见 → 移到 `archive/` 子目录（如有需要再开 COMPACT-NNNN 提案）
 - 周复盘工作流（[`workflows/planning/weekly_review_routine.md`](../../workflows/planning/weekly_review_routine.md)）加一条 checklist 项："扫 handoffs/ 30 天未动的，按 4 选 1 处理"
@@ -209,7 +209,7 @@ YYYY-MM-DD_<from-or-to>_<topic>.md
 2. **inbox 接收流**：原始资料 → _raw/ → 脱敏 → inbox/ → 处理 → 关掉
 3. **outbox 发送流**：成品 → 脱敏自查 → outbox/ → 通知下游 → 等下游确认收到 → 30 天后周复盘看是否清理
 4. **AI 协助起草 outbox 的 5 步法**：（提示词模板，参考 [`workflows/planning/writing_a_prd.md`](../../workflows/planning/writing_a_prd.md) 的 5 步法风格）
-5. **常见误用与纠正**：含 5 个反例（"我把这周的会议纪要也丢进 outbox" → 错，会议纪要走 [`workspace_human/meetings/`](../meetings/)）
+5. **常见误用与纠正**：含 5 个反例（"我把这周的会议纪要也丢进 outbox" → 错，会议纪要走 [`meetings/`](../meetings/)）
 
 工作流文件 ≤ 300 行，按红线 #11 ≥ 200 行声明 retention。
 
@@ -331,10 +331,10 @@ YYYY-MM-DD_<from-or-to>_<topic>.md
   - 影响：高（违反红线 #3，可能涉合规事故）
   - 对策：双层 + .gitignore（§4.2）+ 红色警示（AC-9）+ 命名规则 `[REDACT-PENDING]_` 前缀（§4.4）
   - 触发条件：第 1 次发生 → 立即在 issues/known.md 登记 + 复盘是否需引入 pre-commit hook（升级为可选 PRD）
-- **风险 3：与 [`workspace_human/meetings/customer_followups/`](../meetings/customer_followups/) 混淆**
+- **风险 3：与 [`meetings/customer_followups/`](../meetings/customer_followups/) 混淆**
   - 概率：中
   - 影响：低（重复，但都不丢东西）
-  - 对策：handoffs/README.md + workspace_human/meetings/customer_followups/README.md 互相 cross-link 写"是什么 / 不是什么 / 我和它的区别"
+  - 对策：handoffs/README.md + meetings/customer_followups/README.md 互相 cross-link 写"是什么 / 不是什么 / 我和它的区别"
   - 触发条件：上线 60 天后 grep 两份 README 是否都加了 cross-link，没加补
 - **风险 4：AI 把 outbox 成品错写到 [`workspace_human/`](../) 里（违反红线 #12）**
   - 概率：中（AI 历史直觉是把"人会读的东西"丢 workspace_human）

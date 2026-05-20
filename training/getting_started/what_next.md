@@ -46,5 +46,5 @@
 
 ## 反馈 / Feedback
 
-学习中遇到的问题、看不懂的段、写得不好的部分 → [`workspace_human/meetings/`](../../workspace_human/meetings/) 起一份"自学反馈"。让仓库随真实使用进化。
-Open a "self-study feedback" note in [`workspace_human/meetings/`](../../workspace_human/meetings/). Let the repo evolve with real usage.
+学习中遇到的问题、看不懂的段、写得不好的部分 → [`meetings/`](../../meetings/) 起一份"自学反馈"。让仓库随真实使用进化。
+Open a "self-study feedback" note in [`meetings/`](../../meetings/). Let the repo evolve with real usage.

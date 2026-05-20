@@ -27,7 +27,7 @@ retention_reason: 全公司日常岗位间轻量传递工作流，长期复用 /
 | 不临时（要长期）→ [`runbooks/`](../../runbooks/) / [`templates/`](../../templates/) / [`case_studies/`](../../case_studies/) |
 | 岗位级交接（人员变动）→ 专门的离职 / 调岗流程（未来 PRD） |
 | 对客户合同 / 法务 → 签批流程（**不进 git**） |
-| 客户电话纪要 → [`workspace_human/meetings/customer_followups/`](../../workspace_human/meetings/customer_followups/) |
+| 客户电话纪要 → [`meetings/customer_followups/`](../../meetings/customer_followups/) |
 | Bug / 问题 → [`issues/known.md`](../../issues/known.md)（红线 #4 SSOT）|
 
 ---
@@ -94,7 +94,7 @@ ls handoffs/inbox/_raw/    # 应该看到你刚扔进来的文件
 
 | 误用 | 应去 |
 |---|---|
-| 把客户电话**纪要**写到 outbox/ | [`workspace_human/meetings/customer_followups/`](../../workspace_human/meetings/customer_followups/) |
+| 把客户电话**纪要**写到 outbox/ | [`meetings/customer_followups/`](../../meetings/customer_followups/) |
 | 把 Bug 报告写到 outbox/ | [`issues/known.md`](../../issues/known.md) |
 | 把"未来要做的功能"想法写到 outbox/ | [`workspace_human/prd/`](../../workspace_human/prd/) 起 PRD |
 | 把客户合同初稿丢进 inbox/_raw/ | 合同**不进 git**，走签批流程 |

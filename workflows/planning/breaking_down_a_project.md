@@ -133,7 +133,7 @@ When ≥ 3 functions are involved:
 1. **每个职能选一个 owner** —— 不是"销售组"，是"销售-Z" / One named owner per function
 2. **每周开一次 30 分钟同步会** —— 周一上午，全员 + 主持人 / Weekly 30-min sync, Monday AM, all + chair
 3. **同步会有标准模板** —— 见 [`templates/meeting_notes/cross_functional_weekly.md`](../../templates/meeting_notes/) / Template-driven
-4. **会后纪要 24 小时内出**，落到 [`workspace_human/meetings/`](../../workspace_human/meetings/) / Notes within 24h, into `workspace_human/meetings/`
+4. **会后纪要 24 小时内出**，落到 [`meetings/`](../../meetings/) / Notes within 24h, into `meetings/`
 5. **谁的 owner 调整 → 立刻广播给所有 owners**，不要"我私下调一下" / Owner changes broadcast immediately
 
 ---

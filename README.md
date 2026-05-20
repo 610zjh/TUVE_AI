@@ -110,8 +110,10 @@ TUVE_AI/
 │                                `products/tuve/openclaw_context/` 额外收录 TUVE 运行时上下文包
 ├── handoffs/                 ← 日常工作传递区（inbox / outbox，AI 可写）
 │                                Daily handoff zone (inbox / outbox, AI-writable)
-├── workspace_human/          ← 人写的 PRD / 会议纪要（AI 只读）
-│                                Human-authored PRDs and meeting notes (AI read-only)
+├── meetings/                 ← 会议纪要 / ADR / 复盘 / 研究沉淀（AI 可协助）
+│                                Meeting notes / ADRs / retros / research writeups (AI-assisted)
+├── workspace_human/          ← 人写的 PRD / 受保护原始资料（AI 只读）
+│                                Human-authored PRDs and protected source materials (AI read-only)
 ├── issues/                   ← 全公司 Bug / 工艺问题登记本（SSOT）
 │                                Company-wide issue tracker (single source of truth)
 ├── runbooks/                 ← 操作手册（部署 / 接客 / 上下游交接）

@@ -158,8 +158,8 @@ Every data summary's final output includes:
 （用了哪些数据、怎么聚合、空值怎么处理、抽样还是全量）
 ```
 
-存到 [`workspace_human/meetings/analysis/`](../../workspace_human/meetings/) 下。
-Save under `workspace_human/meetings/analysis/`.
+存到 [`meetings/analysis/`](../../meetings/) 下。
+Save under `meetings/analysis/`.
 
 retention class：如果是月度 / 周度的汇总，用 `rollup`；如果是一次性深度分析，用 `permanent`。
 retention: `rollup` for periodic summaries, `permanent` for deep one-off analyses.
